@@ -1353,37 +1353,38 @@ async def evaluate_bulk_api(
     col_mapping = {}
     for c in df.columns:
         c_clean = str(c).strip().lower().replace('\n', ' ')
-        if c_clean == 'name' or c_clean == 'student name' or c_clean == 'full name':
+        
+        if (c_clean == 'name' or c_clean == 'student name' or c_clean == 'full name') and 'name' not in col_mapping:
             col_mapping['name'] = c
         elif 'name' in c_clean and 'company' not in c_clean and 'father' not in c_clean and 'mother' not in c_clean and 'name' not in col_mapping:
             col_mapping['name'] = c
-        elif 'roll' in c_clean or 'student id' in c_clean:
+        elif ('roll' in c_clean or 'student id' in c_clean) and 'student_id' not in col_mapping:
             col_mapping['student_id'] = c
-        elif 'cpi' in c_clean or 'gpa' in c_clean:
+        elif ('cpi' in c_clean or 'gpa' in c_clean) and 'cpi' not in col_mapping:
             col_mapping['cpi'] = c
-        elif 'backlog' in c_clean:
+        elif 'backlog' in c_clean and 'backlogs' not in col_mapping:
             col_mapping['backlogs'] = c
-        elif 'dsa' in c_clean or 'data structure' in c_clean or 'algorithm' in c_clean:
+        elif ('dsa' in c_clean or 'data structure' in c_clean or 'algorithm' in c_clean) and 'dsa_marks' not in col_mapping:
             col_mapping['dsa_marks'] = c
-        elif 'english' in c_clean or 'communication' in c_clean:
+        elif ('english' in c_clean or 'communication' in c_clean) and 'medium' not in c_clean and 'english_marks' not in col_mapping:
             col_mapping['english_marks'] = c
-        elif 'internship' in c_clean:
+        elif 'internship' in c_clean and ('number' in c_clean or 'count' in c_clean or 'completed' in c_clean) and 'internships_count' not in col_mapping:
             col_mapping['internships_count'] = c
-        elif 'attendance' in c_clean:
+        elif 'attendance' in c_clean and 'attendance' not in col_mapping:
             col_mapping['attendance'] = c
-        elif 'github' in c_clean:
+        elif 'github' in c_clean and 'github' not in col_mapping:
             col_mapping['github'] = c
-        elif 'linkedin' in c_clean:
+        elif 'linkedin' in c_clean and 'linkedin' not in col_mapping:
             col_mapping['linkedin'] = c
-        elif 'leetcode' in c_clean:
+        elif 'leetcode' in c_clean and 'leetcode' not in col_mapping:
             col_mapping['leetcode'] = c
-        elif 'codeforces' in c_clean:
+        elif 'codeforces' in c_clean and 'codeforces' not in col_mapping:
             col_mapping['codeforces'] = c
-        elif 'codechef' in c_clean:
+        elif 'codechef' in c_clean and 'codechef' not in col_mapping:
             col_mapping['codechef'] = c
-        elif 'hackerrank' in c_clean:
+        elif 'hackerrank' in c_clean and 'hackerrank' not in col_mapping:
             col_mapping['hackerrank'] = c
-        elif 'resume' in c_clean:
+        elif 'resume' in c_clean and 'resume' not in col_mapping:
             col_mapping['resume'] = c
 
     # Helper function to extract a value based on mapped column
