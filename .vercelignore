@@ -1,0 +1,7 @@
+*.py
+requirements.txt
+Agent V2/
+agent/
+*.xlsx
+*.csv
+test_*.txt
