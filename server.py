@@ -1363,11 +1363,11 @@ async def evaluate_bulk_api(
             col_mapping['cpi'] = c
         elif 'backlog' in c_clean:
             col_mapping['backlogs'] = c
-        elif 'dsa' in c_clean:
+        elif 'dsa' in c_clean or 'data structure' in c_clean or 'algorithm' in c_clean:
             col_mapping['dsa_marks'] = c
-        elif 'english' in c_clean and 'medium' not in c_clean:
+        elif 'english' in c_clean or 'communication' in c_clean:
             col_mapping['english_marks'] = c
-        elif 'internship' in c_clean and 'completed' in c_clean:
+        elif 'internship' in c_clean:
             col_mapping['internships_count'] = c
         elif 'attendance' in c_clean:
             col_mapping['attendance'] = c
@@ -1427,12 +1427,12 @@ async def evaluate_bulk_api(
     async def evaluate_single(row):
         roll = "00000"
         name = "Unknown Student"
-        cpi = "7.5"
+        cpi = "0"
         backlogs = "0"
-        dsa = "70"
-        eng = "70"
+        dsa = "0"
+        eng = "0"
         internships = "0"
-        attendance = "85"
+        attendance = "0"
         github = leetcode = codeforces = codechef = hackerrank = ""
         matched_resume = ""
         student_payload = {"student_id": roll, "name": name, "agent_targets": {}}
@@ -1443,12 +1443,12 @@ async def evaluate_bulk_api(
             # Strip trailing ".0" pandas float artifact from numeric roll numbers
             if roll.endswith('.0') and roll[:-2].isdigit():
                 roll = roll[:-2]
-            cpi = get_val(row, 'cpi', '7.5')
+            cpi = get_val(row, 'cpi', '0')
             backlogs = get_val(row, 'backlogs', '0')
-            dsa = get_val(row, 'dsa_marks', '70')
-            eng = get_val(row, 'english_marks', '70')
+            dsa = get_val(row, 'dsa_marks', '0')
+            eng = get_val(row, 'english_marks', '0')
             internships = get_val(row, 'internships_count', '0')
-            attendance = get_val(row, 'attendance', '85')
+            attendance = get_val(row, 'attendance', '0')
             
             github = get_val(row, 'github', '')
             linkedin = get_val(row, 'linkedin', '')
