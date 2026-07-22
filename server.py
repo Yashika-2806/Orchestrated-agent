@@ -1393,7 +1393,10 @@ async def evaluate_bulk_api(
             val = row[col]
             if pd.isna(val):
                 return default
-            return str(val).strip()
+            val_str = str(val).strip()
+            if not val_str or val_str.lower() in ["na", "n/a", "none", "null", "-", "undefined"]:
+                return default
+            return val_str
         return default
 
     # Resolve version-specific paths
