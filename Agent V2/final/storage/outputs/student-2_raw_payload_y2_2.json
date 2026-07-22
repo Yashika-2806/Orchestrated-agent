@@ -1,0 +1,130 @@
+{
+    "student_id": "2",
+    "name": "Keerti",
+    "execution_timestamp": "2026-07-04T03:07:27.464154+00:00",
+    "evaluations": {
+        "resume_agent": {
+            "status": "failed",
+            "error_log": "No Resume PDF path provided",
+            "final_score": 0
+        },
+        "github_agent": {
+            "agent": "github",
+            "status": "success",
+            "final_score": 76.28,
+            "sub_scores": {
+                "consistency": 43.14,
+                "community": 100.0,
+                "technology": 100.0,
+                "advanced": 0.0,
+                "management": 84.33
+            },
+            "narrative_context": {
+                "top_technologies": [
+                    "Python",
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Procfile"
+                ],
+                "recent_focus_areas": [
+                    {
+                        "name": "csed-club-website",
+                        "description": "No description provided.",
+                        "primary_language": "TypeScript"
+                    },
+                    {
+                        "name": "skillify-india-hub",
+                        "description": "No description provided.",
+                        "primary_language": "TypeScript"
+                    },
+                    {
+                        "name": "ledgerVault",
+                        "description": "No description provided.",
+                        "primary_language": "TypeScript"
+                    },
+                    {
+                        "name": "ExpoBot",
+                        "description": "No description provided.",
+                        "primary_language": "Python"
+                    },
+                    {
+                        "name": "Ashwini",
+                        "description": "No description provided.",
+                        "primary_language": "JavaScript"
+                    },
+                    {
+                        "name": "Book_recommendation_system",
+                        "description": "No description provided.",
+                        "primary_language": "Python"
+                    },
+                    {
+                        "name": "TARS_Website",
+                        "description": "No description provided.",
+                        "primary_language": "Unknown"
+                    },
+                    {
+                        "name": "AI-Tutor",
+                        "description": "No description provided.",
+                        "primary_language": "JavaScript"
+                    },
+                    {
+                        "name": "TARS",
+                        "description": "No description provided.",
+                        "primary_language": "JavaScript"
+                    },
+                    {
+                        "name": "blog_project",
+                        "description": "No description provided.",
+                        "primary_language": "HTML"
+                    }
+                ]
+            }
+        },
+        "cp_agent": {
+            "agent": "cp",
+            "status": "success",
+            "final_score": 41.96,
+            "sub_scores": {
+                "leetcode": {
+                    "clout": 12.0,
+                    "consistency": 100.0,
+                    "velocity": 100.0,
+                    "total": 82.4,
+                    "persona": "Streak Maker",
+                    "solved_count": 277
+                },
+                "codeforces": {
+                    "clout": 33.611111111111114,
+                    "consistency": 0.0,
+                    "velocity": 92.5,
+                    "total": 31.944444444444446,
+                    "persona": "Balanced Developer",
+                    "solved_count": 15
+                },
+                "hackerrank": {
+                    "clout": 40.0,
+                    "consistency": 2.820602739726027,
+                    "velocity": 20.0,
+                    "total": 21.12824109589041,
+                    "persona": "Balanced Developer",
+                    "solved_count": 25
+                }
+            },
+            "narrative_context": {
+                "platforms_evaluated": [
+                    "leetcode",
+                    "codeforces",
+                    "hackerrank"
+                ],
+                "aggregation_method": "Dynamic Persona Allocation (3 platforms)",
+                "sigmoidal_multiplier": 1.081,
+                "platform_weights_applied": {
+                    "leetcode": 0.232,
+                    "codeforces": 0.32,
+                    "hackerrank": 0.448
+                }
+            }
+        }
+    }
+}

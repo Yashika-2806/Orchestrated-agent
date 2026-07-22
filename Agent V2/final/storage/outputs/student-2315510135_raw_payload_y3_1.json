@@ -1,0 +1,753 @@
+{
+    "student_id": "2315510135",
+    "name": "Paasapu Nani",
+    "execution_timestamp": "2026-07-11T05:57:04.612618+00:00",
+    "scores": {
+        "resume_score": 52.39,
+        "github_score": 37.32,
+        "cp_score": 18.06,
+        "master_score": 35.92
+    },
+    "evaluations": {
+        "resume_agent": {
+            "agent": "resume",
+            "status": "success",
+            "final_score": 52.39,
+            "sub_scores": {
+                "S_hygiene": 85,
+                "S_realization": 50.98,
+                "S_complexity": 70.49,
+                "S_impact": 24.05,
+                "S_production": 0.0,
+                "S_clarity": 100.0,
+                "S_domain": 88.24,
+                "S_velocity": 0
+            },
+            "narrative_context": {
+                "buzzwords_found": {},
+                "generic_email_flag": 0,
+                "missing_sections": 0
+            }
+        },
+        "github_agent": {
+            "agent": "github",
+            "status": "success",
+            "final_score": 37.32,
+            "sub_scores": {
+                "consistency": 34.08,
+                "community": 4.0,
+                "technology": 57.23,
+                "advanced": 0.0,
+                "management": 100.0
+            },
+            "narrative_context": {
+                "top_technologies": [
+                    "JavaScript",
+                    "EJS",
+                    "HTML",
+                    "CSS",
+                    "Jupyter Notebook"
+                ],
+                "recent_focus_areas": [
+                    {
+                        "name": "AIML_ASSIGEMENT_WEEK_1",
+                        "description": "No description provided.",
+                        "primary_language": "Jupyter Notebook"
+                    },
+                    {
+                        "name": "An-AI-Agent-That-Builds-Websites-from-Natural-Language-Prompts",
+                        "description": "No description provided.",
+                        "primary_language": "TypeScript"
+                    },
+                    {
+                        "name": "NodeJS_LAB-Task",
+                        "description": "No description provided.",
+                        "primary_language": "JavaScript"
+                    },
+                    {
+                        "name": "E-commerce",
+                        "description": "No description provided.",
+                        "primary_language": "JavaScript"
+                    },
+                    {
+                        "name": "paasapunani",
+                        "description": "Hello World ,this is my profile",
+                        "primary_language": "Unknown"
+                    },
+                    {
+                        "name": "Full-Stack-Assignment",
+                        "description": "No description provided.",
+                        "primary_language": "HTML"
+                    },
+                    {
+                        "name": "AI-Based-Personal-Finance-Management-App",
+                        "description": "AI-powered personal finance app that tracks expenses, categorizes transactions, predicts budgets, and provides smart spending insights. Features dashboards, alerts, and secure data handling for simple, automated money management.",
+                        "primary_language": "JavaScript"
+                    }
+                ],
+                "ast_code_complexity": {
+                    "avg_cyclomatic_complexity": 1.0,
+                    "maintainability_index": 96.5,
+                    "total_functions_analyzed": 7,
+                    "gamification_flags_count": 0,
+                    "gamification_warnings": []
+                },
+                "academic_dsa_verification": {
+                    "academic_gpa": 8.5,
+                    "dsa_academic_score": 85.0,
+                    "has_dsa_repo_proof": false,
+                    "matched_dsa_repos": [],
+                    "low_practical_consistency_warning": true,
+                    "warning_message": "WARNING: Candidate scored high in academic DSA/GPA but has ZERO algorithm/DSA repositories on GitHub."
+                }
+            }
+        },
+        "cp_agent": {
+            "agent": "cp",
+            "status": "success",
+            "final_score": 18.06,
+            "sub_scores": {
+                "leetcode": {
+                    "clout": 8.0,
+                    "consistency": 3.3333333333333335,
+                    "velocity": 67.63636363636363,
+                    "total": 18.06060606060606,
+                    "persona": "Balanced Developer",
+                    "solved_count": 45
+                }
+            },
+            "narrative_context": {
+                "platforms_evaluated": [
+                    "leetcode"
+                ],
+                "aggregation_method": "Dynamic Persona Allocation (1 platforms)",
+                "sigmoidal_multiplier": 1.0,
+                "platform_weights_applied": {
+                    "leetcode": 1.0
+                },
+                "unified_elo_rating": 896.0,
+                "single_weekend_crunch_risk": false,
+                "crunch_ratio_3day": 1.0
+            }
+        }
+    },
+    "blackboard_snapshot": {
+        "slots": {
+            "github": {
+                "agent": "github",
+                "status": "success",
+                "final_score": 37.32,
+                "sub_scores": {
+                    "consistency": 34.08,
+                    "community": 4.0,
+                    "technology": 57.23,
+                    "advanced": 0.0,
+                    "management": 100.0
+                },
+                "narrative_context": {
+                    "top_technologies": [
+                        "JavaScript",
+                        "EJS",
+                        "HTML",
+                        "CSS",
+                        "Jupyter Notebook"
+                    ],
+                    "recent_focus_areas": [
+                        {
+                            "name": "AIML_ASSIGEMENT_WEEK_1",
+                            "description": "No description provided.",
+                            "primary_language": "Jupyter Notebook"
+                        },
+                        {
+                            "name": "An-AI-Agent-That-Builds-Websites-from-Natural-Language-Prompts",
+                            "description": "No description provided.",
+                            "primary_language": "TypeScript"
+                        },
+                        {
+                            "name": "NodeJS_LAB-Task",
+                            "description": "No description provided.",
+                            "primary_language": "JavaScript"
+                        },
+                        {
+                            "name": "E-commerce",
+                            "description": "No description provided.",
+                            "primary_language": "JavaScript"
+                        },
+                        {
+                            "name": "paasapunani",
+                            "description": "Hello World ,this is my profile",
+                            "primary_language": "Unknown"
+                        },
+                        {
+                            "name": "Full-Stack-Assignment",
+                            "description": "No description provided.",
+                            "primary_language": "HTML"
+                        },
+                        {
+                            "name": "AI-Based-Personal-Finance-Management-App",
+                            "description": "AI-powered personal finance app that tracks expenses, categorizes transactions, predicts budgets, and provides smart spending insights. Features dashboards, alerts, and secure data handling for simple, automated money management.",
+                            "primary_language": "JavaScript"
+                        }
+                    ],
+                    "ast_code_complexity": {
+                        "avg_cyclomatic_complexity": 1.0,
+                        "maintainability_index": 96.5,
+                        "total_functions_analyzed": 7,
+                        "gamification_flags_count": 0,
+                        "gamification_warnings": []
+                    },
+                    "academic_dsa_verification": {
+                        "academic_gpa": 8.5,
+                        "dsa_academic_score": 85.0,
+                        "has_dsa_repo_proof": false,
+                        "matched_dsa_repos": [],
+                        "low_practical_consistency_warning": true,
+                        "warning_message": "WARNING: Candidate scored high in academic DSA/GPA but has ZERO algorithm/DSA repositories on GitHub."
+                    }
+                }
+            },
+            "resume": {
+                "agent": "resume",
+                "status": "success",
+                "final_score": 52.39,
+                "sub_scores": {
+                    "S_hygiene": 85,
+                    "S_realization": 50.98,
+                    "S_complexity": 70.49,
+                    "S_impact": 24.05,
+                    "S_production": 0.0,
+                    "S_clarity": 100.0,
+                    "S_domain": 88.24,
+                    "S_velocity": 0
+                },
+                "narrative_context": {
+                    "buzzwords_found": {},
+                    "generic_email_flag": 0,
+                    "missing_sections": 0
+                }
+            },
+            "cp": {
+                "agent": "cp",
+                "status": "success",
+                "final_score": 18.06,
+                "sub_scores": {
+                    "leetcode": {
+                        "clout": 8.0,
+                        "consistency": 3.3333333333333335,
+                        "velocity": 67.63636363636363,
+                        "total": 18.06060606060606,
+                        "persona": "Balanced Developer",
+                        "solved_count": 45
+                    }
+                },
+                "narrative_context": {
+                    "platforms_evaluated": [
+                        "leetcode"
+                    ],
+                    "aggregation_method": "Dynamic Persona Allocation (1 platforms)",
+                    "sigmoidal_multiplier": 1.0,
+                    "platform_weights_applied": {
+                        "leetcode": 1.0
+                    },
+                    "unified_elo_rating": 896.0,
+                    "single_weekend_crunch_risk": false,
+                    "crunch_ratio_3day": 1.0
+                }
+            },
+            "metadata": {}
+        },
+        "query_log": [
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "Jupyter Notebook",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "Jupyter Notebook",
+                    "status": "STRONGLY_VERIFIED",
+                    "commit_weight": 70.0,
+                    "repo_count": 2,
+                    "cp_solved_count": 45,
+                    "proof_sources": [
+                        "GitHub Technologies",
+                        "GitHub Repositories"
+                    ],
+                    "details": "Strong evidence found across GitHub Technologies, GitHub Repositories. Repo count: 2."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "HTML",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "HTML",
+                    "status": "STRONGLY_VERIFIED",
+                    "commit_weight": 70.0,
+                    "repo_count": 2,
+                    "cp_solved_count": 45,
+                    "proof_sources": [
+                        "GitHub Technologies",
+                        "GitHub Repositories"
+                    ],
+                    "details": "Strong evidence found across GitHub Technologies, GitHub Repositories. Repo count: 2."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "Python",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "Python",
+                    "status": "UNVERIFIED_CLAIM",
+                    "commit_weight": 0.0,
+                    "repo_count": 0,
+                    "cp_solved_count": 45,
+                    "proof_sources": [],
+                    "details": "No code commits or contest activity found matching skill 'Python'."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "CSS",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "CSS",
+                    "status": "PARTIALLY_VERIFIED",
+                    "commit_weight": 50.0,
+                    "repo_count": 1,
+                    "cp_solved_count": 45,
+                    "proof_sources": [
+                        "GitHub Technologies"
+                    ],
+                    "details": "Partial evidence found in GitHub Technologies. Repo count: 1."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "EJS",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "EJS",
+                    "status": "STRONGLY_VERIFIED",
+                    "commit_weight": 70.0,
+                    "repo_count": 2,
+                    "cp_solved_count": 45,
+                    "proof_sources": [
+                        "GitHub Technologies",
+                        "GitHub Repositories"
+                    ],
+                    "details": "Strong evidence found across GitHub Technologies, GitHub Repositories. Repo count: 2."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "TypeScript",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "TypeScript",
+                    "status": "PARTIALLY_VERIFIED",
+                    "commit_weight": 20.0,
+                    "repo_count": 1,
+                    "cp_solved_count": 45,
+                    "proof_sources": [
+                        "GitHub Repositories"
+                    ],
+                    "details": "Partial evidence found in GitHub Repositories. Repo count: 1."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "JavaScript",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "JavaScript",
+                    "status": "STRONGLY_VERIFIED",
+                    "commit_weight": 110.0,
+                    "repo_count": 4,
+                    "cp_solved_count": 45,
+                    "proof_sources": [
+                        "GitHub Technologies",
+                        "GitHub Repositories"
+                    ],
+                    "details": "Strong evidence found across GitHub Technologies, GitHub Repositories. Repo count: 4."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "Problem Solving",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "Problem Solving",
+                    "status": "UNVERIFIED_CLAIM",
+                    "commit_weight": 0.0,
+                    "repo_count": 0,
+                    "cp_solved_count": 45,
+                    "proof_sources": [],
+                    "details": "No code commits or contest activity found matching skill 'Problem Solving'."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "React",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "React",
+                    "status": "UNVERIFIED_CLAIM",
+                    "commit_weight": 0.0,
+                    "repo_count": 0,
+                    "cp_solved_count": 45,
+                    "proof_sources": [],
+                    "details": "No code commits or contest activity found matching skill 'React'."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "C++",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "C++",
+                    "status": "UNVERIFIED_CLAIM",
+                    "commit_weight": 0.0,
+                    "repo_count": 0,
+                    "cp_solved_count": 45,
+                    "proof_sources": [],
+                    "details": "No code commits or contest activity found matching skill 'C++'."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "Docker",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "Docker",
+                    "status": "UNVERIFIED_CLAIM",
+                    "commit_weight": 0.0,
+                    "repo_count": 0,
+                    "cp_solved_count": 45,
+                    "proof_sources": [],
+                    "details": "No code commits or contest activity found matching skill 'Docker'."
+                }
+            }
+        ]
+    },
+    "inter_agent_consensus": {
+        "validated_primary_domain": "Web Development",
+        "validated_secondary_domain": "AI/ML",
+        "domain_validation_score": 78.5,
+        "verified_skills": [
+            {
+                "skill": "JavaScript",
+                "status": "Strongly Verified",
+                "evidence_source": "GitHub"
+            },
+            {
+                "skill": "HTML",
+                "status": "Strongly Verified",
+                "evidence_source": "GitHub"
+            },
+            {
+                "skill": "CSS",
+                "status": "Strongly Verified",
+                "evidence_source": "GitHub"
+            },
+            {
+                "skill": "Jupyter Notebook",
+                "status": "Partially Verified",
+                "evidence_source": "GitHub"
+            }
+        ],
+        "unverified_resume_claims": [],
+        "inter_agent_brainstorm_transcript": [
+            {
+                "agent": "GitHub Agent",
+                "message": "The repositories show strong evidence of web development skills, particularly in JavaScript, HTML, and CSS. There's also some work in AI/ML with Jupyter Notebook."
+            },
+            {
+                "agent": "Resume Agent",
+                "message": "The resume claims skills in web development and AI/ML. The project descriptions align with the GitHub findings, but there's less emphasis on AI/ML in terms of depth."
+            },
+            {
+                "agent": "CP Agent",
+                "message": "The CP profile shows limited algorithmic problem-solving, mostly on LeetCode. This suggests a focus on practical coding rather than competitive programming."
+            },
+            {
+                "agent": "GitHub Agent",
+                "message": "Given the repository evidence, I propose Web Development as the primary domain with AI/ML as a secondary domain."
+            },
+            {
+                "agent": "Resume Agent",
+                "message": "I agree with Web Development as the primary domain. The AI/ML work is present but not as extensive, supporting it as a secondary domain."
+            }
+        ],
+        "validation_reasoning": "The primary domain of Web Development is strongly supported by the GitHub repositories, which show consistent use of JavaScript, HTML, and CSS. The secondary domain of AI/ML is supported by some projects using Jupyter Notebook, but the depth and breadth are less compared to web development. The CP profile indicates practical coding skills rather than competitive programming prowess, aligning with the web development focus.",
+        "communication_status": "success",
+        "protocol_version": "2.1 (Strict Schema Contract & Shared Blackboard)",
+        "strict_schema_query_logs": [
+            {
+                "skill": "Jupyter Notebook",
+                "status": "STRONGLY_VERIFIED",
+                "commit_weight": 70.0,
+                "repo_count": 2,
+                "cp_solved_count": 45,
+                "proof_sources": [
+                    "GitHub Technologies",
+                    "GitHub Repositories"
+                ],
+                "details": "Strong evidence found across GitHub Technologies, GitHub Repositories. Repo count: 2."
+            },
+            {
+                "skill": "HTML",
+                "status": "STRONGLY_VERIFIED",
+                "commit_weight": 70.0,
+                "repo_count": 2,
+                "cp_solved_count": 45,
+                "proof_sources": [
+                    "GitHub Technologies",
+                    "GitHub Repositories"
+                ],
+                "details": "Strong evidence found across GitHub Technologies, GitHub Repositories. Repo count: 2."
+            },
+            {
+                "skill": "Python",
+                "status": "UNVERIFIED_CLAIM",
+                "commit_weight": 0.0,
+                "repo_count": 0,
+                "cp_solved_count": 45,
+                "proof_sources": [],
+                "details": "No code commits or contest activity found matching skill 'Python'."
+            },
+            {
+                "skill": "CSS",
+                "status": "PARTIALLY_VERIFIED",
+                "commit_weight": 50.0,
+                "repo_count": 1,
+                "cp_solved_count": 45,
+                "proof_sources": [
+                    "GitHub Technologies"
+                ],
+                "details": "Partial evidence found in GitHub Technologies. Repo count: 1."
+            },
+            {
+                "skill": "EJS",
+                "status": "STRONGLY_VERIFIED",
+                "commit_weight": 70.0,
+                "repo_count": 2,
+                "cp_solved_count": 45,
+                "proof_sources": [
+                    "GitHub Technologies",
+                    "GitHub Repositories"
+                ],
+                "details": "Strong evidence found across GitHub Technologies, GitHub Repositories. Repo count: 2."
+            },
+            {
+                "skill": "TypeScript",
+                "status": "PARTIALLY_VERIFIED",
+                "commit_weight": 20.0,
+                "repo_count": 1,
+                "cp_solved_count": 45,
+                "proof_sources": [
+                    "GitHub Repositories"
+                ],
+                "details": "Partial evidence found in GitHub Repositories. Repo count: 1."
+            },
+            {
+                "skill": "JavaScript",
+                "status": "STRONGLY_VERIFIED",
+                "commit_weight": 110.0,
+                "repo_count": 4,
+                "cp_solved_count": 45,
+                "proof_sources": [
+                    "GitHub Technologies",
+                    "GitHub Repositories"
+                ],
+                "details": "Strong evidence found across GitHub Technologies, GitHub Repositories. Repo count: 4."
+            },
+            {
+                "skill": "Problem Solving",
+                "status": "UNVERIFIED_CLAIM",
+                "commit_weight": 0.0,
+                "repo_count": 0,
+                "cp_solved_count": 45,
+                "proof_sources": [],
+                "details": "No code commits or contest activity found matching skill 'Problem Solving'."
+            },
+            {
+                "skill": "React",
+                "status": "UNVERIFIED_CLAIM",
+                "commit_weight": 0.0,
+                "repo_count": 0,
+                "cp_solved_count": 45,
+                "proof_sources": [],
+                "details": "No code commits or contest activity found matching skill 'React'."
+            },
+            {
+                "skill": "C++",
+                "status": "UNVERIFIED_CLAIM",
+                "commit_weight": 0.0,
+                "repo_count": 0,
+                "cp_solved_count": 45,
+                "proof_sources": [],
+                "details": "No code commits or contest activity found matching skill 'C++'."
+            },
+            {
+                "skill": "Docker",
+                "status": "UNVERIFIED_CLAIM",
+                "commit_weight": 0.0,
+                "repo_count": 0,
+                "cp_solved_count": 45,
+                "proof_sources": [],
+                "details": "No code commits or contest activity found matching skill 'Docker'."
+            }
+        ]
+    },
+    "semantic_profile": {
+        "career_intent": "Paasapu Nani is likely to pursue a career in Web Development with a secondary interest in AI/ML.",
+        "primary_domain": "Web Development",
+        "secondary_domain": "AI/ML",
+        "top_skills": [
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "EJS",
+            "Jupyter Notebook",
+            "TypeScript"
+        ],
+        "experience_summary": "Paasapu Nani has worked on several web development projects using JavaScript, HTML, and CSS, as evidenced by GitHub repositories. There is also some involvement in AI/ML projects, though less extensive.",
+        "strengths": [
+            "Strong web development skills",
+            "Proficiency in JavaScript",
+            "Experience with HTML and CSS",
+            "Basic understanding of AI/ML",
+            "High maintainability index in code"
+        ],
+        "gaps": [
+            "Lack of production-grade project experience",
+            "Limited competitive programming activity",
+            "No evidence of advanced AI/ML projects",
+            "Absence of problem-solving repositories"
+        ],
+        "coding_aptitude_level": "Intermediate",
+        "project_maturity_level": "Academic",
+        "synthesis_status": "success"
+    },
+    "forecasting": {
+        "predicted_domain": "Web Development",
+        "domain_confidence": 0.785,
+        "recommended_roles": [
+            "Frontend Developer",
+            "Backend Developer",
+            "Full Stack Developer"
+        ],
+        "placement_probability": 25.0,
+        "expected_salary_band": {
+            "min_lpa": 3.0,
+            "max_lpa": 5.0,
+            "label": "Entry Level"
+        },
+        "career_readiness": "High Risk / Not Placed",
+        "key_differentiators": [
+            "Strong proficiency in JavaScript",
+            "Extensive web development project experience",
+            "High maintainability index in code"
+        ],
+        "improvement_areas": [
+            "Gain production-grade project experience",
+            "Increase involvement in competitive programming",
+            "Develop advanced AI/ML projects"
+        ],
+        "reasoning": "Paasapu Nani's strong web development skills, particularly in JavaScript, HTML, and CSS, align with the primary domain of Web Development. However, the employability index is low due to limited production-grade experience and competitive programming activity, resulting in a 'High Risk / Not Placed' state. The expected salary band is grounded within the historical baseline for similar profiles.",
+        "risk_factors": [
+            "Lack of production-grade project experience",
+            "Limited competitive programming activity",
+            "Low employability index"
+        ],
+        "forecast_status": "success",
+        "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+        "employability_state_machine": {
+            "employability_index": 38.15,
+            "state": "HIGH_RISK_NOT_PLACED",
+            "pillar_scores": {
+                "pillar1_tech_competence": 25.76,
+                "pillar2_communication": 52.39,
+                "pillar3_market_readiness": 44.86
+            },
+            "max_allowed_placement_probability": 25.0,
+            "gating_reason": "Hard threshold gate failed: Tech(25.8)/Comm(52.4)/Readiness(44.9)."
+        },
+        "semantic_domain_anchor": {
+            "anchored_primary_domain": "Web Development",
+            "anchored_roles": [
+                "Frontend Developer",
+                "Backend Developer",
+                "Full Stack Developer"
+            ],
+            "semantic_intersection_counts": {
+                "Web Development": 4,
+                "Systems": 3
+            }
+        },
+        "mini_rag_market_baseline": {
+            "score_range": "0-40%",
+            "target_tier": "below_40",
+            "retrieved_salary_band": {
+                "min_lpa": 3.0,
+                "max_lpa": 5.0,
+                "label": "Entry Level"
+            },
+            "prompt_injection": "HISTORICAL LOCAL MARKET MINI-RAG ANCHOR:\nHistorically, students from this institution with a Master Score between 0-40% and domain 'Web Development' achieved salary packages between 3.0 LPA and 5.0 LPA (Entry Level). You MUST ground your estimated salary band strictly within or near this baseline window."
+        },
+        "backtesting_validation": {
+            "status": "validated",
+            "score_range": "30-50",
+            "historical_sample_size": 62,
+            "historical_placed": 28,
+            "historical_observed_rate": 45.2,
+            "predicted_probability": 25.0,
+            "deviation_pct": 20.2,
+            "alignment": "Weak Alignment \u2014 Review Required"
+        }
+    }
+}

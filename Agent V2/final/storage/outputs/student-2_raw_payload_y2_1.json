@@ -1,0 +1,140 @@
+{
+    "student_id": "2",
+    "name": "Anmol Sharma",
+    "execution_timestamp": "2026-07-04T03:06:04.318262+00:00",
+    "evaluations": {
+        "resume_agent": {
+            "status": "failed",
+            "error_log": "No Resume PDF path provided",
+            "final_score": 0
+        },
+        "github_agent": {
+            "agent": "github",
+            "status": "success",
+            "final_score": 77.82,
+            "sub_scores": {
+                "consistency": 45.11,
+                "community": 100.0,
+                "technology": 100.0,
+                "advanced": 3.01,
+                "management": 90.0
+            },
+            "narrative_context": {
+                "top_technologies": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Python",
+                    "TypeScript"
+                ],
+                "recent_focus_areas": [
+                    {
+                        "name": "csed-club-website",
+                        "description": "No description provided.",
+                        "primary_language": "TypeScript"
+                    },
+                    {
+                        "name": "skillify-india-hub",
+                        "description": "No description provided.",
+                        "primary_language": "TypeScript"
+                    },
+                    {
+                        "name": "ledgerVault",
+                        "description": "No description provided.",
+                        "primary_language": "TypeScript"
+                    },
+                    {
+                        "name": "network_bouncer",
+                        "description": "No description provided.",
+                        "primary_language": "Unknown"
+                    },
+                    {
+                        "name": "GokulHealth",
+                        "description": "No description provided.",
+                        "primary_language": "TypeScript"
+                    },
+                    {
+                        "name": "App",
+                        "description": "No description provided.",
+                        "primary_language": "TypeScript"
+                    },
+                    {
+                        "name": "IIITD",
+                        "description": "No description provided.",
+                        "primary_language": "Unknown"
+                    },
+                    {
+                        "name": "property_dealer",
+                        "description": "No description provided.",
+                        "primary_language": "Python"
+                    },
+                    {
+                        "name": "rover_new",
+                        "description": "No description provided.",
+                        "primary_language": "HTML"
+                    },
+                    {
+                        "name": "ExpoBot",
+                        "description": "No description provided.",
+                        "primary_language": "Python"
+                    }
+                ]
+            }
+        },
+        "cp_agent": {
+            "agent": "cp",
+            "status": "success",
+            "final_score": 96.88,
+            "sub_scores": {
+                "leetcode": {
+                    "clout": 100.0,
+                    "consistency": 100.0,
+                    "velocity": 100.0,
+                    "total": 100.0,
+                    "persona": "Contest Hunter",
+                    "solved_count": 3977
+                },
+                "codeforces": {
+                    "clout": 100.0,
+                    "consistency": 100.0,
+                    "velocity": 88.85786802030456,
+                    "total": 97.77157360406092,
+                    "persona": "Contest Hunter",
+                    "solved_count": 4444
+                },
+                "codechef": {
+                    "clout": 68.84444444444443,
+                    "consistency": 100.0,
+                    "velocity": 50.0,
+                    "total": 77.53777777777778,
+                    "persona": "Balanced Developer",
+                    "solved_count": 518
+                },
+                "hackerrank": {
+                    "clout": 73.33333333333333,
+                    "consistency": 7.844164383561644,
+                    "velocity": 52.0,
+                    "total": 42.87099908675799,
+                    "persona": "Balanced Developer",
+                    "solved_count": 68
+                }
+            },
+            "narrative_context": {
+                "platforms_evaluated": [
+                    "leetcode",
+                    "codeforces",
+                    "codechef",
+                    "hackerrank"
+                ],
+                "aggregation_method": "Dynamic Persona Allocation (4 platforms)",
+                "sigmoidal_multiplier": 1.103,
+                "platform_weights_applied": {
+                    "leetcode": 0.344,
+                    "codeforces": 0.349,
+                    "codechef": 0.179,
+                    "hackerrank": 0.129
+                }
+            }
+        }
+    }
+}

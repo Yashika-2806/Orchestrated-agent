@@ -1,0 +1,42 @@
+{
+    "placement_probability_curve": {
+        "tiers": [
+            {"score_min": 0, "score_max": 40, "placement_pct": 25, "label": "Needs Development"},
+            {"score_min": 40, "score_max": 60, "placement_pct": 55, "label": "Needs Development"},
+            {"score_min": 60, "score_max": 75, "placement_pct": 78, "label": "Market Ready"},
+            {"score_min": 75, "score_max": 85, "placement_pct": 88, "label": "Highly Competitive"},
+            {"score_min": 85, "score_max": 101, "placement_pct": 98, "label": "Exceptional"}
+        ]
+    },
+    "salary_bands": {
+        "bands": {
+            "Web Development": {
+                "below_40": {"min_lpa": 3.0, "max_lpa": 4.5, "label": "Entry Level"},
+                "40_to_60": {"min_lpa": 4.5, "max_lpa": 7.5, "label": "Mid Tier"},
+                "60_to_80": {"min_lpa": 7.5, "max_lpa": 12.0, "label": "High Tier"},
+                "above_80": {"min_lpa": 12.0, "max_lpa": 22.0, "label": "Premium Tier"}
+            },
+            "AI/ML": {
+                "below_40": {"min_lpa": 4.0, "max_lpa": 5.5, "label": "Entry Level"},
+                "40_to_60": {"min_lpa": 5.5, "max_lpa": 9.0, "label": "Mid Tier"},
+                "60_to_80": {"min_lpa": 9.0, "max_lpa": 16.0, "label": "High Tier"},
+                "above_80": {"min_lpa": 16.0, "max_lpa": 28.0, "label": "Premium Tier"}
+            },
+            "General Software Engineering": {
+                "below_40": {"min_lpa": 3.0, "max_lpa": 4.0, "label": "Entry Level"},
+                "40_to_60": {"min_lpa": 4.0, "max_lpa": 7.0, "label": "Mid Tier"},
+                "60_to_80": {"min_lpa": 7.0, "max_lpa": 12.0, "label": "High Tier"},
+                "above_80": {"min_lpa": 12.0, "max_lpa": 20.0, "label": "Premium Tier"}
+            }
+        }
+    },
+    "backtesting_reference": {
+        "samples": [
+            {"score_range": "0-40", "total_students": 20, "placed": 4, "observed_rate": 20.0},
+            {"score_range": "40-60", "total_students": 45, "placed": 23, "observed_rate": 51.1},
+            {"score_range": "60-70", "total_students": 60, "placed": 45, "observed_rate": 75.0},
+            {"score_range": "70-85", "total_students": 54, "placed": 48, "observed_rate": 88.9},
+            {"score_range": "85-100", "total_students": 25, "placed": 24, "observed_rate": 96.0}
+        ]
+    }
+}

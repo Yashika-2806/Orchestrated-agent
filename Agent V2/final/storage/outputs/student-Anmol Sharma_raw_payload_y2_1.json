@@ -1,0 +1,42 @@
+{
+    "student_id": "Anmol Sharma",
+    "name": 2,
+    "execution_timestamp": "2026-07-03T17:40:01.082958+00:00",
+    "evaluations": {
+        "resume_agent": {
+            "agent": "resume",
+            "status": "failed",
+            "error_log": "PDF file not found or path was None: D:\\GLA Live Projects\\Talent Forcast Agents\\Suites\\resumes\\Anmol Sharma.pdf",
+            "final_score": 0
+        },
+        "github_agent": {
+            "agent": "github",
+            "status": "success",
+            "final_score": 23.63,
+            "sub_scores": {
+                "consistency": 0.0,
+                "community": 27.09,
+                "technology": 8.0,
+                "advanced": 0.0,
+                "management": 90.0
+            },
+            "narrative_context": {
+                "top_technologies": [
+                    "JavaScript"
+                ],
+                "recent_focus_areas": [
+                    {
+                        "name": "karma-u-launcher",
+                        "description": "running tests on U",
+                        "primary_language": "JavaScript"
+                    }
+                ]
+            }
+        },
+        "cp_agent": {
+            "status": "failed",
+            "error_log": "All scrapers failed or timed out",
+            "final_score": 0
+        }
+    }
+}

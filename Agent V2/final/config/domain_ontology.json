@@ -1,0 +1,208 @@
+{
+    "skill_to_domain": {
+        "description": "Maps individual technical skills to their primary industry domain classification.",
+        "mapping": {
+            "React": "Web Development",
+            "Angular": "Web Development",
+            "Vue": "Web Development",
+            "Next.js": "Web Development",
+            "Svelte": "Web Development",
+            "HTML": "Web Development",
+            "CSS": "Web Development",
+            "JavaScript": "Web Development",
+            "TypeScript": "Web Development",
+            "Node.js": "Web Development",
+            "Express": "Web Development",
+            "Django": "Web Development",
+            "Flask": "Web Development",
+            "FastAPI": "Web Development",
+            "Spring": "Web Development",
+            "GraphQL": "Web Development",
+            "REST": "Web Development",
+            "Tailwind": "Web Development",
+            "Bootstrap": "Web Development",
+
+            "TensorFlow": "AI/ML",
+            "PyTorch": "AI/ML",
+            "Keras": "AI/ML",
+            "Scikit-learn": "AI/ML",
+            "OpenCV": "AI/ML",
+            "NLP": "AI/ML",
+            "LLM": "AI/ML",
+            "LangChain": "AI/ML",
+            "Hugging Face": "AI/ML",
+            "Transformers": "AI/ML",
+            "YOLO": "AI/ML",
+            "Deep Learning": "AI/ML",
+            "Machine Learning": "AI/ML",
+            "Computer Vision": "AI/ML",
+            "Neural Networks": "AI/ML",
+            "Pandas": "AI/ML",
+            "NumPy": "AI/ML",
+            "Matplotlib": "AI/ML",
+
+            "Docker": "DevOps",
+            "Kubernetes": "DevOps",
+            "Jenkins": "DevOps",
+            "CI/CD": "DevOps",
+            "Terraform": "DevOps",
+            "Ansible": "DevOps",
+            "GitHub Actions": "DevOps",
+            "AWS": "DevOps",
+            "GCP": "DevOps",
+            "Azure": "DevOps",
+            "Nginx": "DevOps",
+            "Linux": "DevOps",
+            "Bash": "DevOps",
+
+            "Spark": "Data Engineering",
+            "Hadoop": "Data Engineering",
+            "Kafka": "Data Engineering",
+            "Airflow": "Data Engineering",
+            "Elasticsearch": "Data Engineering",
+            "ETL": "Data Engineering",
+            "BigQuery": "Data Engineering",
+            "Snowflake": "Data Engineering",
+            "dbt": "Data Engineering",
+            "SQL": "Data Engineering",
+            "PostgreSQL": "Data Engineering",
+            "MySQL": "Data Engineering",
+            "MongoDB": "Data Engineering",
+            "Redis": "Data Engineering",
+            "Cassandra": "Data Engineering",
+
+            "React Native": "Mobile",
+            "Flutter": "Mobile",
+            "Swift": "Mobile",
+            "Kotlin": "Mobile",
+            "Android": "Mobile",
+            "iOS": "Mobile",
+            "Dart": "Mobile",
+            "Expo": "Mobile",
+
+            "Solidity": "Web3",
+            "Ethereum": "Web3",
+            "Smart Contracts": "Web3",
+            "Blockchain": "Web3",
+            "Web3.js": "Web3",
+            "Hardhat": "Web3",
+            "IPFS": "Web3",
+            "DeFi": "Web3",
+
+            "Penetration Testing": "CyberSecurity",
+            "Nmap": "CyberSecurity",
+            "Wireshark": "CyberSecurity",
+            "Burp Suite": "CyberSecurity",
+            "Metasploit": "CyberSecurity",
+            "Cryptography": "CyberSecurity",
+            "OWASP": "CyberSecurity",
+            "SOC": "CyberSecurity",
+
+            "C": "Systems",
+            "C++": "Systems",
+            "Rust": "Systems",
+            "Go": "Systems",
+            "Golang": "Systems",
+            "gRPC": "Systems",
+            "Microservices": "Systems",
+            "Distributed Systems": "Systems",
+            "RabbitMQ": "Systems",
+            "Celery": "Systems",
+            "WebSockets": "Systems",
+
+            "Figma": "UI/UX",
+            "Adobe XD": "UI/UX",
+            "Sketch": "UI/UX",
+            "Wireframing": "UI/UX",
+            "Prototyping": "UI/UX",
+            "User Research": "UI/UX"
+        }
+    },
+    "domain_to_roles": {
+        "description": "Maps each domain to a prioritized list of suitable industry roles for BTech CS graduates.",
+        "mapping": {
+            "Web Development": [
+                "Frontend Developer",
+                "Backend Developer",
+                "Full Stack Developer",
+                "Software Development Engineer (SDE)",
+                "Web Application Engineer"
+            ],
+            "AI/ML": [
+                "ML Engineer",
+                "Data Scientist",
+                "AI Research Engineer",
+                "NLP Engineer",
+                "Computer Vision Engineer"
+            ],
+            "DevOps": [
+                "DevOps Engineer",
+                "Site Reliability Engineer (SRE)",
+                "Cloud Engineer",
+                "Infrastructure Engineer",
+                "Platform Engineer"
+            ],
+            "Data Engineering": [
+                "Data Engineer",
+                "Database Administrator",
+                "Analytics Engineer",
+                "ETL Developer",
+                "Data Platform Engineer"
+            ],
+            "Mobile": [
+                "Mobile App Developer",
+                "Android Developer",
+                "iOS Developer",
+                "Cross-Platform Developer",
+                "React Native Developer"
+            ],
+            "Web3": [
+                "Blockchain Developer",
+                "Smart Contract Engineer",
+                "DeFi Developer",
+                "Web3 Full Stack Developer",
+                "Protocol Engineer"
+            ],
+            "CyberSecurity": [
+                "Security Analyst",
+                "Penetration Tester",
+                "Security Engineer",
+                "SOC Analyst",
+                "Application Security Engineer"
+            ],
+            "Systems": [
+                "Systems Engineer",
+                "Backend Engineer",
+                "Distributed Systems Engineer",
+                "Performance Engineer",
+                "Infrastructure Software Engineer"
+            ],
+            "UI/UX": [
+                "UI/UX Designer",
+                "Product Designer",
+                "UX Researcher",
+                "Interaction Designer",
+                "Design Engineer"
+            ],
+            "General Software Engineering": [
+                "Software Development Engineer (SDE)",
+                "Software Engineer",
+                "Application Developer",
+                "Associate Software Engineer",
+                "Graduate Trainee Engineer"
+            ]
+        }
+    },
+    "domain_priority_order": [
+        "AI/ML",
+        "Systems",
+        "DevOps",
+        "Data Engineering",
+        "Web Development",
+        "CyberSecurity",
+        "Mobile",
+        "Web3",
+        "UI/UX",
+        "General Software Engineering"
+    ]
+}

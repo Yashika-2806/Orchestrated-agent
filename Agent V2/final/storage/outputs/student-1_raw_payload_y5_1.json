@@ -1,0 +1,193 @@
+{
+    "student_id": "1",
+    "name": "Akshat Gupta",
+    "execution_timestamp": "2026-07-02T04:17:48.357649+00:00",
+    "evaluations": {
+        "resume_agent": {
+            "agent": "resume",
+            "status": "success",
+            "final_score": 60.74,
+            "sub_scores": {
+                "S_hygiene": 80,
+                "S_realization": 15.93,
+                "S_complexity": 100,
+                "S_impact": 64.86,
+                "S_production": 8.33,
+                "S_clarity": 100.0,
+                "S_domain": 88.46,
+                "S_velocity": 15
+            },
+            "narrative_context": {
+                "buzzwords_found": {},
+                "generic_email_flag": 0,
+                "missing_sections": 1
+            }
+        },
+        "github_agent": {
+            "agent": "github",
+            "status": "success",
+            "final_score": 65.32,
+            "sub_scores": {
+                "consistency": 36.47,
+                "community": 72.0,
+                "technology": 100.0,
+                "advanced": 0.0,
+                "management": 76.2
+            },
+            "narrative_context": {
+                "top_technologies": [
+                    "HTML",
+                    "JavaScript",
+                    "CSS",
+                    "Python",
+                    "Kotlin"
+                ],
+                "recent_focus_areas": [
+                    {
+                        "name": "AI_agent_blog_generator",
+                        "description": "No description provided.",
+                        "primary_language": "JavaScript"
+                    },
+                    {
+                        "name": "Java",
+                        "description": "No description provided.",
+                        "primary_language": "Java"
+                    },
+                    {
+                        "name": "PulseTalk",
+                        "description": "No description provided.",
+                        "primary_language": "JavaScript"
+                    },
+                    {
+                        "name": "60-sec-Reflex-Rush",
+                        "description": "No description provided.",
+                        "primary_language": "Kotlin"
+                    },
+                    {
+                        "name": "Inscribe",
+                        "description": "No description provided.",
+                        "primary_language": "JavaScript"
+                    },
+                    {
+                        "name": "twin_mind_fullstack",
+                        "description": "No description provided.",
+                        "primary_language": "Unknown"
+                    },
+                    {
+                        "name": "AI_Tutor_Orchestrator",
+                        "description": "No description provided.",
+                        "primary_language": "Python"
+                    },
+                    {
+                        "name": "Financial_News_Sentiment_Analysis",
+                        "description": "No description provided.",
+                        "primary_language": "Python"
+                    },
+                    {
+                        "name": "Job_Portal",
+                        "description": "No description provided.",
+                        "primary_language": "JavaScript"
+                    },
+                    {
+                        "name": "My-Portfolio",
+                        "description": "No description provided.",
+                        "primary_language": "JavaScript"
+                    }
+                ]
+            }
+        },
+        "cp_agent": {
+            "agent": "cp",
+            "status": "success",
+            "final_score": 96.87,
+            "sub_scores": {
+                "leetcode": {
+                    "clout": 100.0,
+                    "consistency": 100.0,
+                    "velocity": 100.0,
+                    "total": 100.0,
+                    "persona": "Contest Hunter",
+                    "solved_count": 3977
+                },
+                "codeforces": {
+                    "clout": 100.0,
+                    "consistency": 100.0,
+                    "velocity": 88.85786802030456,
+                    "total": 97.77157360406092,
+                    "persona": "Contest Hunter",
+                    "solved_count": 4446
+                },
+                "codechef": {
+                    "clout": 68.84444444444443,
+                    "consistency": 100.0,
+                    "velocity": 50.0,
+                    "total": 77.53777777777778,
+                    "persona": "Balanced Developer",
+                    "solved_count": 518
+                },
+                "hackerrank": {
+                    "clout": 73.33333333333333,
+                    "consistency": 7.844164383561644,
+                    "velocity": 52.0,
+                    "total": 42.87099908675799,
+                    "persona": "Balanced Developer",
+                    "solved_count": 68
+                }
+            },
+            "narrative_context": {
+                "platforms_evaluated": [
+                    "leetcode",
+                    "codeforces",
+                    "codechef",
+                    "hackerrank"
+                ],
+                "aggregation_method": "Dynamic Persona Allocation (4 platforms)",
+                "sigmoidal_multiplier": 1.103,
+                "platform_weights_applied": {
+                    "leetcode": 0.344,
+                    "codeforces": 0.349,
+                    "codechef": 0.179,
+                    "hackerrank": 0.129
+                }
+            }
+        },
+        "linkedin_agent": {
+            "agent": "linkedin",
+            "status": "success",
+            "final_score": 39.8,
+            "sub_scores": {
+                "consistency": 28.03,
+                "engagement": 19.94,
+                "depth": 16.0,
+                "authority": 76.06,
+                "optimization": 100.0
+            },
+            "narrative_context": {
+                "top_skills": [
+                    [
+                        "AngularJS",
+                        0
+                    ],
+                    [
+                        "MySQL",
+                        0
+                    ],
+                    [
+                        "PhpMyAdmin",
+                        0
+                    ],
+                    [
+                        "Laravel",
+                        0
+                    ],
+                    [
+                        "Public Speaking",
+                        0
+                    ]
+                ],
+                "total_experience_roles": 2,
+                "total_certifications": 4
+            }
+        }
+    }
+}

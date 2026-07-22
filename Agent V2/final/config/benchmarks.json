@@ -1,0 +1,90 @@
+{
+    "placement_probability_curve": {
+        "description": "Maps master_score ranges to historical placement probability percentages. Based on aggregated campus placement data across CS/IT branches.",
+        "tiers": [
+            {"score_min": 0,  "score_max": 20, "placement_pct": 10, "label": "Critical Gap"},
+            {"score_min": 20, "score_max": 35, "placement_pct": 25, "label": "Below Average"},
+            {"score_min": 35, "score_max": 50, "placement_pct": 45, "label": "Average"},
+            {"score_min": 50, "score_max": 60, "placement_pct": 60, "label": "Above Average"},
+            {"score_min": 60, "score_max": 70, "placement_pct": 75, "label": "Good"},
+            {"score_min": 70, "score_max": 80, "placement_pct": 88, "label": "Strong"},
+            {"score_min": 80, "score_max": 90, "placement_pct": 95, "label": "Excellent"},
+            {"score_min": 90, "score_max": 100, "placement_pct": 99, "label": "Exceptional"}
+        ]
+    },
+    "salary_bands": {
+        "description": "Expected salary bands (INR LPA) by domain and score tier. Derived from Glassdoor, AmbitionBox, and campus placement records for BTech CS graduates (2022-2025 batches).",
+        "bands": {
+            "Web Development": {
+                "below_40": {"min_lpa": 3.0, "max_lpa": 5.0, "label": "Entry Level"},
+                "40_to_60":  {"min_lpa": 5.0, "max_lpa": 8.0, "label": "Mid Tier"},
+                "60_to_80":  {"min_lpa": 8.0, "max_lpa": 14.0, "label": "High Tier"},
+                "above_80":  {"min_lpa": 14.0, "max_lpa": 25.0, "label": "Premium Tier"}
+            },
+            "AI/ML": {
+                "below_40": {"min_lpa": 4.0, "max_lpa": 6.0, "label": "Entry Level"},
+                "40_to_60":  {"min_lpa": 6.0, "max_lpa": 10.0, "label": "Mid Tier"},
+                "60_to_80":  {"min_lpa": 10.0, "max_lpa": 18.0, "label": "High Tier"},
+                "above_80":  {"min_lpa": 18.0, "max_lpa": 35.0, "label": "Premium Tier"}
+            },
+            "DevOps": {
+                "below_40": {"min_lpa": 3.5, "max_lpa": 5.5, "label": "Entry Level"},
+                "40_to_60":  {"min_lpa": 5.5, "max_lpa": 9.0, "label": "Mid Tier"},
+                "60_to_80":  {"min_lpa": 9.0, "max_lpa": 16.0, "label": "High Tier"},
+                "above_80":  {"min_lpa": 16.0, "max_lpa": 30.0, "label": "Premium Tier"}
+            },
+            "Data Engineering": {
+                "below_40": {"min_lpa": 3.5, "max_lpa": 5.5, "label": "Entry Level"},
+                "40_to_60":  {"min_lpa": 5.5, "max_lpa": 9.0, "label": "Mid Tier"},
+                "60_to_80":  {"min_lpa": 9.0, "max_lpa": 15.0, "label": "High Tier"},
+                "above_80":  {"min_lpa": 15.0, "max_lpa": 28.0, "label": "Premium Tier"}
+            },
+            "Mobile": {
+                "below_40": {"min_lpa": 3.0, "max_lpa": 5.0, "label": "Entry Level"},
+                "40_to_60":  {"min_lpa": 5.0, "max_lpa": 8.0, "label": "Mid Tier"},
+                "60_to_80":  {"min_lpa": 8.0, "max_lpa": 14.0, "label": "High Tier"},
+                "above_80":  {"min_lpa": 14.0, "max_lpa": 24.0, "label": "Premium Tier"}
+            },
+            "CyberSecurity": {
+                "below_40": {"min_lpa": 3.5, "max_lpa": 5.5, "label": "Entry Level"},
+                "40_to_60":  {"min_lpa": 5.5, "max_lpa": 9.0, "label": "Mid Tier"},
+                "60_to_80":  {"min_lpa": 9.0, "max_lpa": 16.0, "label": "High Tier"},
+                "above_80":  {"min_lpa": 16.0, "max_lpa": 28.0, "label": "Premium Tier"}
+            },
+            "Systems": {
+                "below_40": {"min_lpa": 3.0, "max_lpa": 5.0, "label": "Entry Level"},
+                "40_to_60":  {"min_lpa": 5.0, "max_lpa": 8.5, "label": "Mid Tier"},
+                "60_to_80":  {"min_lpa": 8.5, "max_lpa": 15.0, "label": "High Tier"},
+                "above_80":  {"min_lpa": 15.0, "max_lpa": 30.0, "label": "Premium Tier"}
+            },
+            "Web3": {
+                "below_40": {"min_lpa": 3.0, "max_lpa": 5.0, "label": "Entry Level"},
+                "40_to_60":  {"min_lpa": 5.0, "max_lpa": 9.0, "label": "Mid Tier"},
+                "60_to_80":  {"min_lpa": 9.0, "max_lpa": 18.0, "label": "High Tier"},
+                "above_80":  {"min_lpa": 18.0, "max_lpa": 35.0, "label": "Premium Tier"}
+            },
+            "UI/UX": {
+                "below_40": {"min_lpa": 2.5, "max_lpa": 4.5, "label": "Entry Level"},
+                "40_to_60":  {"min_lpa": 4.5, "max_lpa": 7.0, "label": "Mid Tier"},
+                "60_to_80":  {"min_lpa": 7.0, "max_lpa": 12.0, "label": "High Tier"},
+                "above_80":  {"min_lpa": 12.0, "max_lpa": 20.0, "label": "Premium Tier"}
+            },
+            "General Software Engineering": {
+                "below_40": {"min_lpa": 3.0, "max_lpa": 5.0, "label": "Entry Level"},
+                "40_to_60":  {"min_lpa": 5.0, "max_lpa": 8.0, "label": "Mid Tier"},
+                "60_to_80":  {"min_lpa": 8.0, "max_lpa": 14.0, "label": "High Tier"},
+                "above_80":  {"min_lpa": 14.0, "max_lpa": 25.0, "label": "Premium Tier"}
+            }
+        }
+    },
+    "backtesting_reference": {
+        "description": "Historical placement outcomes for validation. Maps score ranges to observed placement rates from previous batches.",
+        "samples": [
+            {"score_range": "0-30",  "total_students": 45, "placed": 8,  "observed_rate": 17.8},
+            {"score_range": "30-50", "total_students": 62, "placed": 28, "observed_rate": 45.2},
+            {"score_range": "50-70", "total_students": 88, "placed": 64, "observed_rate": 72.7},
+            {"score_range": "70-85", "total_students": 54, "placed": 48, "observed_rate": 88.9},
+            {"score_range": "85-100","total_students": 21, "placed": 20, "observed_rate": 95.2}
+        ]
+    }
+}

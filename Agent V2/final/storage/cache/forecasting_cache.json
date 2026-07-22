@@ -1,0 +1,1253 @@
+{
+  "19a1e5ec084a87c1": {
+    "predicted_domain": "Web Development",
+    "domain_confidence": 0.85,
+    "recommended_roles": [
+      "Frontend Developer",
+      "Backend Developer",
+      "Full Stack Developer"
+    ],
+    "placement_probability": 85.0,
+    "expected_salary_band": {
+      "min_lpa": 5.0,
+      "max_lpa": 8.0,
+      "label": "Mid Tier"
+    },
+    "career_readiness": "Market Ready",
+    "key_differentiators": [
+      "Strong problem-solving skills",
+      "Proficiency in Java and JavaScript",
+      "High consistency in competitive programming"
+    ],
+    "improvement_areas": [
+      "Enhance communication skills",
+      "Gain professional experience through internships",
+      "Develop project management skills"
+    ],
+    "reasoning": "Shiva Srivastava is well-prepared for a career in Web Development, with strong technical competence in Java and JavaScript, as evidenced by GitHub projects and competitive programming scores. The employability index indicates market readiness, although communication skills and professional experience are areas for improvement. The semantic domain anchoring aligns with the recommended roles in web development.",
+    "salary_reasoning": "The expected salary band of 5.0 to 8.0 LPA is grounded in the historical local market data for students with a similar master score range and domain focus. Shiva's technical skills and problem-solving abilities support this salary expectation within the Mid Tier range.",
+    "risk_factors": [
+      "Lack of professional experience",
+      "Limited communication skills",
+      "No resume data"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 64.52,
+      "state": "PLACED_MARKET_READY",
+      "pillar_scores": {
+        "pillar1_tech_competence": 83.48,
+        "pillar2_communication": 45.0,
+        "pillar3_market_readiness": 52.35
+      },
+      "max_allowed_placement_probability": 85.0,
+      "gating_reason": "All 3 pillars pass market-readiness thresholds."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "Web Development",
+      "anchored_roles": [
+        "Frontend Developer",
+        "Backend Developer",
+        "Full Stack Developer"
+      ],
+      "semantic_intersection_counts": {
+        "Web Development": 4,
+        "Systems": 2
+      }
+    },
+    "mini_rag_market_baseline": {
+      "score_range": "40-60%",
+      "target_tier": "40_to_60",
+      "retrieved_salary_band": {
+        "min_lpa": 5.0,
+        "max_lpa": 8.0,
+        "label": "Mid Tier"
+      },
+      "prompt_injection": "HISTORICAL LOCAL MARKET MINI-RAG ANCHOR:\nHistorically, students from this institution with a Master Score between 40-60% and domain 'Web Development' achieved salary packages between 5.0 LPA and 8.0 LPA (Mid Tier). You MUST ground your estimated salary band strictly within or near this baseline window."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "50-70",
+      "historical_sample_size": 88,
+      "historical_placed": 64,
+      "historical_observed_rate": 72.7,
+      "predicted_probability": 85.0,
+      "deviation_pct": 12.3,
+      "alignment": "Moderate Alignment"
+    },
+    "cached_hit": false
+  },
+  "deb997588350ffa6": {
+    "predicted_domain": "Web Development",
+    "domain_confidence": 0.85,
+    "recommended_roles": [
+      "Frontend Developer",
+      "Backend Developer",
+      "Full Stack Developer"
+    ],
+    "placement_probability": 85.0,
+    "expected_salary_band": {
+      "min_lpa": 5.0,
+      "max_lpa": 8.0,
+      "label": "Mid Tier"
+    },
+    "career_readiness": "Market Ready",
+    "key_differentiators": [
+      "Strong Web Development skills",
+      "Proficiency in JavaScript and Python",
+      "Consistent GitHub activity"
+    ],
+    "improvement_areas": [
+      "Increase community engagement on GitHub",
+      "Develop advanced AI/ML projects",
+      "Enhance competitive programming achievements"
+    ],
+    "reasoning": "Yashika's strong verification in Web Development skills, particularly in JavaScript and Python, aligns with her primary domain. The employability index indicates market readiness, supported by solid communication skills. The Mini-RAG baseline confirms the expected salary band, given her master score and domain anchoring.",
+    "salary_reasoning": "The expected salary band of 5.0 to 8.0 LPA is grounded in the historical Mini-RAG data for students with similar master scores in Web Development. Yashika's technical competence and market readiness support this mid-tier salary expectation.",
+    "risk_factors": [
+      "Lack of advanced AI/ML project evidence",
+      "Low community engagement on GitHub"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 53.87,
+      "state": "PLACED_MARKET_READY",
+      "pillar_scores": {
+        "pillar1_tech_competence": 38.83,
+        "pillar2_communication": 75.62,
+        "pillar3_market_readiness": 58.31
+      },
+      "max_allowed_placement_probability": 85.0,
+      "gating_reason": "All 3 pillars pass market-readiness thresholds."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "Web Development",
+      "anchored_roles": [
+        "Frontend Developer",
+        "Backend Developer",
+        "Full Stack Developer"
+      ],
+      "semantic_intersection_counts": {
+        "Web Development": 4,
+        "Systems": 3
+      }
+    },
+    "mini_rag_market_baseline": {
+      "score_range": "40-60%",
+      "target_tier": "40_to_60",
+      "retrieved_salary_band": {
+        "min_lpa": 5.0,
+        "max_lpa": 8.0,
+        "label": "Mid Tier"
+      },
+      "prompt_injection": "HISTORICAL LOCAL MARKET MINI-RAG ANCHOR:\nHistorically, students from this institution with a Master Score between 40-60% and domain 'Web Development' achieved salary packages between 5.0 LPA and 8.0 LPA (Mid Tier). You MUST ground your estimated salary band strictly within or near this baseline window."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "50-70",
+      "historical_sample_size": 88,
+      "historical_placed": 64,
+      "historical_observed_rate": 72.7,
+      "predicted_probability": 85.0,
+      "deviation_pct": 12.3,
+      "alignment": "Moderate Alignment"
+    },
+    "cached_hit": false
+  },
+  "ecbe86d32ba542e0": {
+    "predicted_domain": "Web Development",
+    "domain_confidence": 0.85,
+    "recommended_roles": [
+      "Frontend Developer",
+      "Backend Developer",
+      "Full Stack Developer"
+    ],
+    "placement_probability": 25.0,
+    "expected_salary_band": {
+      "min_lpa": 5.0,
+      "max_lpa": 8.0,
+      "label": "Mid Tier"
+    },
+    "career_readiness": "High Risk / Not Placed",
+    "key_differentiators": [
+      "Strong Web Development skills",
+      "Proficiency in JavaScript and Python",
+      "High project complexity and impact"
+    ],
+    "improvement_areas": [
+      "Enhance algorithmic skills",
+      "Increase community engagement on GitHub",
+      "Participate in competitive programming"
+    ],
+    "reasoning": "Yashika's primary domain is Web Development, supported by strong evidence in JavaScript, TypeScript, and HTML. Despite a high communication score, the employability index is low due to insufficient technical competence, resulting in a high-risk placement status. The Mini-RAG baseline suggests a salary band of 5.0 to 8.0 LPA for similar profiles.",
+    "salary_reasoning": "The expected salary band of 5.0 to 8.0 LPA is grounded in the Mini-RAG historical data for Web Development graduates with a Master Score between 40-60%. Yashika's technical skills and project experience align with this mid-tier salary range.",
+    "risk_factors": [
+      "Low technical competence score",
+      "Lack of advanced algorithmic skills",
+      "High risk of not being placed"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 53.04,
+      "state": "HIGH_RISK_NOT_PLACED",
+      "pillar_scores": {
+        "pillar1_tech_competence": 29.06,
+        "pillar2_communication": 84.53,
+        "pillar3_market_readiness": 62.77
+      },
+      "max_allowed_placement_probability": 25.0,
+      "gating_reason": "Hard threshold gate failed: Tech(29.1)/Comm(84.5)/Readiness(62.8)."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "Web Development",
+      "anchored_roles": [
+        "Frontend Developer",
+        "Backend Developer",
+        "Full Stack Developer"
+      ],
+      "semantic_intersection_counts": {
+        "Web Development": 4,
+        "Systems": 3
+      }
+    },
+    "mini_rag_market_baseline": {
+      "score_range": "40-60%",
+      "target_tier": "40_to_60",
+      "retrieved_salary_band": {
+        "min_lpa": 5.0,
+        "max_lpa": 8.0,
+        "label": "Mid Tier"
+      },
+      "prompt_injection": "HISTORICAL LOCAL MARKET MINI-RAG ANCHOR:\nHistorically, students from this institution with a Master Score between 40-60% and domain 'Web Development' achieved salary packages between 5.0 LPA and 8.0 LPA (Mid Tier). You MUST ground your estimated salary band strictly within or near this baseline window."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "50-70",
+      "historical_sample_size": 88,
+      "historical_placed": 64,
+      "historical_observed_rate": 72.7,
+      "predicted_probability": 25.0,
+      "deviation_pct": 47.7,
+      "alignment": "Weak Alignment \u2014 Review Required"
+    },
+    "cached_hit": false
+  },
+  "704c18a76e37ef8f": {
+    "predicted_domain": "Systems",
+    "recommended_roles": [
+      "Systems Engineer",
+      "Backend Engineer",
+      "Distributed Systems Engineer"
+    ],
+    "placement_probability": 25.0,
+    "expected_salary_band": {
+      "min_lpa": 3.0,
+      "max_lpa": 5.0
+    },
+    "career_readiness": "High Risk / Not Placed",
+    "key_differentiators": [
+      "Strong problem-solving skills",
+      "Consistent performance on LeetCode"
+    ],
+    "improvement_areas": [
+      "Gain practical project experience",
+      "Develop a GitHub portfolio"
+    ],
+    "reasoning": "The employability index indicates a high risk of not being placed due to low technical competence and market readiness scores. The semantic domain anchoring aligns with Systems, supported by problem-solving skills. However, the lack of practical experience and GitHub evidence limits placement probability to 25%.",
+    "salary_reasoning": "Given the master score of 11.69 and the Systems domain classification, the expected salary band is strictly within the Entry tier, ranging from 3.0 LPA to 5.0 LPA, as per the Mini-RAG market baseline.",
+    "risk_factors": [
+      "Lack of practical experience",
+      "No GitHub repositories",
+      "Low market readiness score"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 16.51,
+      "state": "HIGH_RISK_NOT_PLACED",
+      "pillar_scores": {
+        "pillar1_tech_competence": 11.69,
+        "pillar2_communication": 45.0,
+        "pillar3_market_readiness": 0.0
+      },
+      "max_allowed_placement_probability": 25.0,
+      "gating_reason": "Master score (11.7) indicates high risk."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "Systems",
+      "anchored_roles": [
+        "Systems Engineer",
+        "Backend Engineer",
+        "Distributed Systems Engineer"
+      ],
+      "semantic_intersection_counts": {
+        "Web Development": 1,
+        "Systems": 3
+      }
+    },
+    "mini_rag_market_baseline": {
+      "domain": "Systems",
+      "tier": "Entry",
+      "min_lpa": 3.0,
+      "max_lpa": 5.0,
+      "prompt_injection": "MARKET BASELINE INJECTION: For domain 'Systems', a student with master score 11.69 falls into the 'Entry' tier. Your forecasted expected_salary_band MUST strictly bound between 3.0 LPA and 5.0 LPA."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "0-30",
+      "historical_sample_size": 45,
+      "historical_placed": 8,
+      "historical_observed_rate": 17.8,
+      "predicted_probability": 25.0,
+      "deviation_pct": 7.2,
+      "alignment": "Strong Alignment"
+    },
+    "cached_hit": false
+  },
+  "e916856f63bfff31": {
+    "predicted_domain": "General Software Engineering",
+    "recommended_roles": [
+      "Software Development Engineer (SDE)",
+      "Software Engineer",
+      "Application Developer"
+    ],
+    "placement_probability": 25.0,
+    "expected_salary_band": {
+      "min_lpa": 3.0,
+      "max_lpa": 5.0
+    },
+    "career_readiness": "High Risk / Not Placed",
+    "key_differentiators": [
+      "Basic problem-solving capability",
+      "Foundational understanding of software engineering principles"
+    ],
+    "improvement_areas": [
+      "Gain practical project experience",
+      "Develop verified technical skills",
+      "Increase GitHub activity"
+    ],
+    "reasoning": "Nikunj Gupta's employability index is low due to a lack of practical experience and verified skills, resulting in a 'High Risk / Not Placed' state. The primary domain is anchored in General Software Engineering with a confidence of 0.4, based on basic problem-solving skills. The placement probability is capped at 25% due to the state machine gating.",
+    "salary_reasoning": "The expected salary band is strictly between 3.0 LPA and 5.0 LPA, as Nikunj falls into the 'Entry' tier for General Software Engineering. This is based on the master score of 3.6 and the historical market baseline for similar profiles.",
+    "risk_factors": [
+      "Lack of practical project experience",
+      "No verified technical skills",
+      "No GitHub activity"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 12.87,
+      "state": "HIGH_RISK_NOT_PLACED",
+      "pillar_scores": {
+        "pillar1_tech_competence": 3.6,
+        "pillar2_communication": 45.0,
+        "pillar3_market_readiness": 0.0
+      },
+      "max_allowed_placement_probability": 25.0,
+      "gating_reason": "Master score (3.6) indicates high risk."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "General Software Engineering",
+      "anchored_roles": [
+        "Software Development Engineer (SDE)",
+        "Software Engineer",
+        "Application Developer"
+      ],
+      "semantic_intersection_counts": {}
+    },
+    "mini_rag_market_baseline": {
+      "domain": "General Software Engineering",
+      "tier": "Entry",
+      "min_lpa": 3.0,
+      "max_lpa": 5.0,
+      "prompt_injection": "MARKET BASELINE INJECTION: For domain 'General Software Engineering', a student with master score 3.6 falls into the 'Entry' tier. Your forecasted expected_salary_band MUST strictly bound between 3.0 LPA and 5.0 LPA."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "0-30",
+      "historical_sample_size": 45,
+      "historical_placed": 8,
+      "historical_observed_rate": 17.8,
+      "predicted_probability": 25.0,
+      "deviation_pct": 7.2,
+      "alignment": "Strong Alignment"
+    },
+    "cached_hit": false
+  },
+  "8201dc0ee1022b6d": {
+    "predicted_domain": "Systems",
+    "recommended_roles": [
+      "Systems Engineer",
+      "Backend Engineer",
+      "Distributed Systems Engineer"
+    ],
+    "placement_probability": 25.0,
+    "expected_salary_band": {
+      "min_lpa": 3.0,
+      "max_lpa": 5.0
+    },
+    "career_readiness": "High Risk / Not Placed",
+    "key_differentiators": [
+      "Strong problem-solving skills",
+      "High competitive programming performance"
+    ],
+    "improvement_areas": [
+      "Gain practical project experience",
+      "Develop a GitHub portfolio",
+      "Enhance market readiness skills"
+    ],
+    "reasoning": "The employability index indicates a high risk of not being placed due to low scores in technical competence and market readiness. The primary domain is anchored in Systems, with a moderate confidence level based on competitive programming skills. The lack of practical experience and GitHub evidence limits the placement probability to 25%.",
+    "salary_reasoning": "The expected salary band is strictly between 3.0 LPA and 5.0 LPA, aligning with the entry-level tier for the Systems domain. This is based on the master score of 31.27 and historical market data for similar profiles.",
+    "risk_factors": [
+      "Lack of practical experience",
+      "No GitHub portfolio",
+      "Low market readiness score"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 25.32,
+      "state": "HIGH_RISK_NOT_PLACED",
+      "pillar_scores": {
+        "pillar1_tech_competence": 31.27,
+        "pillar2_communication": 45.0,
+        "pillar3_market_readiness": 0.0
+      },
+      "max_allowed_placement_probability": 25.0,
+      "gating_reason": "Master score (31.3) indicates high risk."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "Systems",
+      "anchored_roles": [
+        "Systems Engineer",
+        "Backend Engineer",
+        "Distributed Systems Engineer"
+      ],
+      "semantic_intersection_counts": {
+        "Web Development": 1,
+        "Systems": 3
+      }
+    },
+    "mini_rag_market_baseline": {
+      "domain": "Systems",
+      "tier": "Entry",
+      "min_lpa": 3.0,
+      "max_lpa": 5.0,
+      "prompt_injection": "MARKET BASELINE INJECTION: For domain 'Systems', a student with master score 31.27 falls into the 'Entry' tier. Your forecasted expected_salary_band MUST strictly bound between 3.0 LPA and 5.0 LPA."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "30-50",
+      "historical_sample_size": 62,
+      "historical_placed": 28,
+      "historical_observed_rate": 45.2,
+      "predicted_probability": 25.0,
+      "deviation_pct": 20.2,
+      "alignment": "Weak Alignment \u2014 Review Required"
+    },
+    "cached_hit": false
+  },
+  "3636726d138609fb": {
+    "predicted_domain": "Systems",
+    "recommended_roles": [
+      "Systems Engineer",
+      "Backend Engineer",
+      "Distributed Systems Engineer"
+    ],
+    "placement_probability": 25.0,
+    "expected_salary_band": {
+      "min_lpa": 3.0,
+      "max_lpa": 5.0
+    },
+    "career_readiness": "High Risk / Not Placed",
+    "key_differentiators": [
+      "Strong problem-solving skills",
+      "High velocity in solving coding problems"
+    ],
+    "improvement_areas": [
+      "Gain practical project experience",
+      "Develop a GitHub portfolio",
+      "Enhance market readiness skills"
+    ],
+    "reasoning": "The candidate's strong problem-solving skills align with the Systems domain, but the lack of practical experience and GitHub evidence limits their market readiness. The employability index indicates a high risk of not being placed, with a maximum placement probability of 25%. The semantic domain anchoring supports roles in Systems, with a confidence of 0.7.",
+    "salary_reasoning": "Given the master score of 22.56 and the Systems domain classification, the expected salary band is strictly between 3.0 LPA and 5.0 LPA, aligning with the entry-level market baseline for this domain.",
+    "risk_factors": [
+      "Lack of practical experience",
+      "No GitHub portfolio",
+      "Low market readiness score"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 21.4,
+      "state": "HIGH_RISK_NOT_PLACED",
+      "pillar_scores": {
+        "pillar1_tech_competence": 22.56,
+        "pillar2_communication": 45.0,
+        "pillar3_market_readiness": 0.0
+      },
+      "max_allowed_placement_probability": 25.0,
+      "gating_reason": "Master score (22.6) indicates high risk."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "Systems",
+      "anchored_roles": [
+        "Systems Engineer",
+        "Backend Engineer",
+        "Distributed Systems Engineer"
+      ],
+      "semantic_intersection_counts": {
+        "Systems": 3,
+        "Web Development": 1
+      }
+    },
+    "mini_rag_market_baseline": {
+      "domain": "Systems",
+      "tier": "Entry",
+      "min_lpa": 3.0,
+      "max_lpa": 5.0,
+      "prompt_injection": "MARKET BASELINE INJECTION: For domain 'Systems', a student with master score 22.56 falls into the 'Entry' tier. Your forecasted expected_salary_band MUST strictly bound between 3.0 LPA and 5.0 LPA."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "0-30",
+      "historical_sample_size": 45,
+      "historical_placed": 8,
+      "historical_observed_rate": 17.8,
+      "predicted_probability": 25.0,
+      "deviation_pct": 7.2,
+      "alignment": "Strong Alignment"
+    },
+    "cached_hit": false
+  },
+  "7fadeaf187e13701": {
+    "predicted_domain": "Systems",
+    "recommended_roles": [
+      "Systems Engineer",
+      "Backend Engineer",
+      "Distributed Systems Engineer"
+    ],
+    "placement_probability": 25.0,
+    "expected_salary_band": {
+      "min_lpa": 3.0,
+      "max_lpa": 5.0
+    },
+    "career_readiness": "High Risk / Not Placed",
+    "key_differentiators": [
+      "Strong problem-solving skills",
+      "High competitive programming performance"
+    ],
+    "improvement_areas": [
+      "Gain practical project experience",
+      "Contribute to open-source projects",
+      "Improve communication skills"
+    ],
+    "reasoning": "Ritik's strong problem-solving skills and competitive programming performance suggest potential in general software engineering, specifically in Systems. However, the lack of practical experience and GitHub contributions limits his market readiness, resulting in a high-risk placement status. The employability index and state machine gating restrict placement probability to 25%.",
+    "salary_reasoning": "Based on the master score of 34.54 and the Systems domain classification, Ritik falls into the 'Entry' tier. The expected salary band is strictly between 3.0 LPA and 5.0 LPA, aligning with historical market baselines for similar profiles.",
+    "risk_factors": [
+      "Lack of practical experience",
+      "No verified GitHub contributions",
+      "Low market readiness score"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 26.79,
+      "state": "HIGH_RISK_NOT_PLACED",
+      "pillar_scores": {
+        "pillar1_tech_competence": 34.54,
+        "pillar2_communication": 45.0,
+        "pillar3_market_readiness": 0.0
+      },
+      "max_allowed_placement_probability": 25.0,
+      "gating_reason": "Master score (34.5) indicates high risk."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "Systems",
+      "anchored_roles": [
+        "Systems Engineer",
+        "Backend Engineer",
+        "Distributed Systems Engineer"
+      ],
+      "semantic_intersection_counts": {
+        "Systems": 3,
+        "Web Development": 1
+      }
+    },
+    "mini_rag_market_baseline": {
+      "domain": "Systems",
+      "tier": "Entry",
+      "min_lpa": 3.0,
+      "max_lpa": 5.0,
+      "prompt_injection": "MARKET BASELINE INJECTION: For domain 'Systems', a student with master score 34.54 falls into the 'Entry' tier. Your forecasted expected_salary_band MUST strictly bound between 3.0 LPA and 5.0 LPA."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "30-50",
+      "historical_sample_size": 62,
+      "historical_placed": 28,
+      "historical_observed_rate": 45.2,
+      "predicted_probability": 25.0,
+      "deviation_pct": 20.2,
+      "alignment": "Weak Alignment \u2014 Review Required"
+    },
+    "cached_hit": false
+  },
+  "42e02d82e58c4d4d": {
+    "predicted_domain": "General Software Engineering",
+    "recommended_roles": [
+      "Software Development Engineer (SDE)",
+      "Software Engineer",
+      "Application Developer"
+    ],
+    "placement_probability": 25.0,
+    "expected_salary_band": {
+      "min_lpa": 3.0,
+      "max_lpa": 5.0
+    },
+    "career_readiness": "High Risk / Not Placed",
+    "key_differentiators": [],
+    "improvement_areas": [
+      "Gain practical project experience",
+      "Contribute to open source or personal GitHub projects",
+      "Participate in competitive programming contests"
+    ],
+    "reasoning": "Harsh Gupta's employability index is low due to a lack of verified technical skills and practical experience, resulting in a 'High Risk / Not Placed' state. The absence of GitHub contributions and competitive programming performance further limits domain confidence to 0.0. The employability state machine restricts placement probability to 25.0%.",
+    "salary_reasoning": "Given the master score of 0.0 and classification in the 'General Software Engineering' domain, Harsh Gupta falls into the 'Entry' tier. The expected salary band is strictly between 3.0 LPA and 5.0 LPA, aligning with the Mini-RAG market baseline for entry-level positions.",
+    "risk_factors": [
+      "Lack of verified technical skills",
+      "No practical project experience",
+      "No competitive programming performance"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 11.25,
+      "state": "HIGH_RISK_NOT_PLACED",
+      "pillar_scores": {
+        "pillar1_tech_competence": 0.0,
+        "pillar2_communication": 45.0,
+        "pillar3_market_readiness": 0.0
+      },
+      "max_allowed_placement_probability": 25.0,
+      "gating_reason": "Master score (11.2) indicates high risk."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "General Software Engineering",
+      "anchored_roles": [
+        "Software Development Engineer (SDE)",
+        "Software Engineer",
+        "Application Developer"
+      ],
+      "semantic_intersection_counts": {}
+    },
+    "mini_rag_market_baseline": {
+      "domain": "General Software Engineering",
+      "tier": "Entry",
+      "min_lpa": 3.0,
+      "max_lpa": 5.0,
+      "prompt_injection": "MARKET BASELINE INJECTION: For domain 'General Software Engineering', a student with master score 0.0 falls into the 'Entry' tier. Your forecasted expected_salary_band MUST strictly bound between 3.0 LPA and 5.0 LPA."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "0-30",
+      "historical_sample_size": 45,
+      "historical_placed": 8,
+      "historical_observed_rate": 17.8,
+      "predicted_probability": 25.0,
+      "deviation_pct": 7.2,
+      "alignment": "Strong Alignment"
+    },
+    "cached_hit": false
+  },
+  "e1e2786308e8488c": {
+    "predicted_domain": "Systems",
+    "recommended_roles": [
+      "Systems Engineer",
+      "Backend Engineer",
+      "Distributed Systems Engineer"
+    ],
+    "placement_probability": 25.0,
+    "expected_salary_band": {
+      "min_lpa": 3.0,
+      "max_lpa": 5.0
+    },
+    "career_readiness": "High Risk / Not Placed",
+    "key_differentiators": [
+      "Strong problem-solving skills",
+      "High velocity in solving coding problems"
+    ],
+    "improvement_areas": [
+      "Gain practical project experience",
+      "Develop a GitHub portfolio",
+      "Enhance market readiness skills"
+    ],
+    "reasoning": "The employability index indicates a high risk of not being placed due to low scores in technical competence and market readiness. The primary domain is anchored in 'Systems' based on problem-solving skills, but lacks practical experience. The placement probability is capped at 25% due to the state machine gating.",
+    "salary_reasoning": "The expected salary band is strictly between 3.0 LPA and 5.0 LPA, aligning with the 'Entry' tier for the 'Systems' domain. This is based on the master score of 26.79 and historical market data for similar profiles.",
+    "risk_factors": [
+      "Lack of practical experience",
+      "No GitHub or project evidence",
+      "Low market readiness score"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 23.31,
+      "state": "HIGH_RISK_NOT_PLACED",
+      "pillar_scores": {
+        "pillar1_tech_competence": 26.79,
+        "pillar2_communication": 45.0,
+        "pillar3_market_readiness": 0.0
+      },
+      "max_allowed_placement_probability": 25.0,
+      "gating_reason": "Master score (26.8) indicates high risk."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "Systems",
+      "anchored_roles": [
+        "Systems Engineer",
+        "Backend Engineer",
+        "Distributed Systems Engineer"
+      ],
+      "semantic_intersection_counts": {
+        "Web Development": 1,
+        "Systems": 3
+      }
+    },
+    "mini_rag_market_baseline": {
+      "domain": "Systems",
+      "tier": "Entry",
+      "min_lpa": 3.0,
+      "max_lpa": 5.0,
+      "prompt_injection": "MARKET BASELINE INJECTION: For domain 'Systems', a student with master score 26.79 falls into the 'Entry' tier. Your forecasted expected_salary_band MUST strictly bound between 3.0 LPA and 5.0 LPA."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "0-30",
+      "historical_sample_size": 45,
+      "historical_placed": 8,
+      "historical_observed_rate": 17.8,
+      "predicted_probability": 25.0,
+      "deviation_pct": 7.2,
+      "alignment": "Strong Alignment"
+    },
+    "cached_hit": false
+  },
+  "c74440d0e43e5f69": {
+    "predicted_domain": "Systems",
+    "recommended_roles": [
+      "Systems Engineer",
+      "Backend Engineer",
+      "Distributed Systems Engineer"
+    ],
+    "placement_probability": 25.0,
+    "expected_salary_band": {
+      "min_lpa": 3.0,
+      "max_lpa": 5.0
+    },
+    "career_readiness": "High Risk / Not Placed",
+    "key_differentiators": [
+      "Strong problem-solving skills",
+      "High LeetCode clout and velocity"
+    ],
+    "improvement_areas": [
+      "Gain verified project experience",
+      "Develop a GitHub portfolio",
+      "Improve communication skills"
+    ],
+    "reasoning": "The employability index indicates a high risk of not being placed due to low market readiness and tech competence scores. The semantic domain anchoring aligns with Systems, supported by problem-solving skills. The Mini-RAG baseline confirms an entry-level salary band for the Systems domain.",
+    "salary_reasoning": "Given the master score of 37.6 and the Systems domain classification, the expected salary band is strictly between 3.0 LPA and 5.0 LPA, aligning with the entry-level market baseline for this domain.",
+    "risk_factors": [
+      "Lack of practical experience",
+      "No GitHub evidence",
+      "Low communication skills"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 28.17,
+      "state": "HIGH_RISK_NOT_PLACED",
+      "pillar_scores": {
+        "pillar1_tech_competence": 37.6,
+        "pillar2_communication": 45.0,
+        "pillar3_market_readiness": 0.0
+      },
+      "max_allowed_placement_probability": 25.0,
+      "gating_reason": "Master score (37.6) indicates high risk."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "Systems",
+      "anchored_roles": [
+        "Systems Engineer",
+        "Backend Engineer",
+        "Distributed Systems Engineer"
+      ],
+      "semantic_intersection_counts": {
+        "Web Development": 1,
+        "Systems": 3
+      }
+    },
+    "mini_rag_market_baseline": {
+      "domain": "Systems",
+      "tier": "Entry",
+      "min_lpa": 3.0,
+      "max_lpa": 5.0,
+      "prompt_injection": "MARKET BASELINE INJECTION: For domain 'Systems', a student with master score 37.6 falls into the 'Entry' tier. Your forecasted expected_salary_band MUST strictly bound between 3.0 LPA and 5.0 LPA."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "30-50",
+      "historical_sample_size": 62,
+      "historical_placed": 28,
+      "historical_observed_rate": 45.2,
+      "predicted_probability": 25.0,
+      "deviation_pct": 20.2,
+      "alignment": "Weak Alignment \u2014 Review Required"
+    },
+    "cached_hit": false
+  },
+  "18a7ce8086b81073": {
+    "predicted_domain": "Systems",
+    "recommended_roles": [
+      "Systems Engineer",
+      "Backend Engineer",
+      "Distributed Systems Engineer"
+    ],
+    "placement_probability": 25.0,
+    "expected_salary_band": {
+      "min_lpa": 3.0,
+      "max_lpa": 5.0
+    },
+    "career_readiness": "High Risk / Not Placed",
+    "key_differentiators": [
+      "Strong problem-solving skills",
+      "Algorithmic thinking"
+    ],
+    "improvement_areas": [
+      "Gain practical project experience",
+      "Develop a GitHub portfolio",
+      "Enhance domain-specific skills"
+    ],
+    "reasoning": "The employability index indicates a high risk of not being placed due to low scores in technical competence and market readiness. The primary domain is anchored in Systems, with a focus on problem-solving skills. However, the lack of practical experience and GitHub evidence limits the placement probability to 25%.",
+    "salary_reasoning": "Based on the master score of 16.03 and the Systems domain classification, the expected salary band is strictly between 3.0 LPA and 5.0 LPA, aligning with the entry-level market baseline for this domain.",
+    "risk_factors": [
+      "Lack of practical experience",
+      "No GitHub repositories",
+      "Unverified domain-specific skills"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 18.46,
+      "state": "HIGH_RISK_NOT_PLACED",
+      "pillar_scores": {
+        "pillar1_tech_competence": 16.03,
+        "pillar2_communication": 45.0,
+        "pillar3_market_readiness": 0.0
+      },
+      "max_allowed_placement_probability": 25.0,
+      "gating_reason": "Master score (16.0) indicates high risk."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "Systems",
+      "anchored_roles": [
+        "Systems Engineer",
+        "Backend Engineer",
+        "Distributed Systems Engineer"
+      ],
+      "semantic_intersection_counts": {
+        "Systems": 3,
+        "Web Development": 1
+      }
+    },
+    "mini_rag_market_baseline": {
+      "domain": "Systems",
+      "tier": "Entry",
+      "min_lpa": 3.0,
+      "max_lpa": 5.0,
+      "prompt_injection": "MARKET BASELINE INJECTION: For domain 'Systems', a student with master score 16.03 falls into the 'Entry' tier. Your forecasted expected_salary_band MUST strictly bound between 3.0 LPA and 5.0 LPA."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "0-30",
+      "historical_sample_size": 45,
+      "historical_placed": 8,
+      "historical_observed_rate": 17.8,
+      "predicted_probability": 25.0,
+      "deviation_pct": 7.2,
+      "alignment": "Strong Alignment"
+    },
+    "cached_hit": false
+  },
+  "3ce54a20a1b3ac85": {
+    "predicted_domain": "Systems",
+    "recommended_roles": [
+      "Systems Engineer",
+      "Backend Engineer",
+      "Distributed Systems Engineer"
+    ],
+    "placement_probability": 25.0,
+    "expected_salary_band": {
+      "min_lpa": 3.0,
+      "max_lpa": 5.0
+    },
+    "career_readiness": "High Risk / Not Placed",
+    "key_differentiators": [
+      "Strong problem-solving skills",
+      "High algorithmic proficiency",
+      "Consistent performance on LeetCode"
+    ],
+    "improvement_areas": [
+      "Gain practical project experience",
+      "Develop a GitHub portfolio",
+      "Verify domain-specific skills"
+    ],
+    "reasoning": "Vinayak Singh's strong problem-solving skills and algorithmic proficiency align with the Systems domain. However, the lack of practical experience and GitHub evidence limits his market readiness, resulting in a high-risk placement status. The employability index and state machine gating restrict placement probability to 25%.",
+    "salary_reasoning": "Based on the master score of 27.29 and the Systems domain classification, Vinayak falls into the 'Entry' tier. Historical market data for this tier indicates a salary range between 3.0 LPA and 5.0 LPA, which aligns with his current skill level and employability index.",
+    "risk_factors": [
+      "Lack of practical experience",
+      "No GitHub repositories",
+      "Unverified domain-specific skills"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 23.53,
+      "state": "HIGH_RISK_NOT_PLACED",
+      "pillar_scores": {
+        "pillar1_tech_competence": 27.29,
+        "pillar2_communication": 45.0,
+        "pillar3_market_readiness": 0.0
+      },
+      "max_allowed_placement_probability": 25.0,
+      "gating_reason": "Master score (27.3) indicates high risk."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "Systems",
+      "anchored_roles": [
+        "Systems Engineer",
+        "Backend Engineer",
+        "Distributed Systems Engineer"
+      ],
+      "semantic_intersection_counts": {
+        "Web Development": 1,
+        "Systems": 3
+      }
+    },
+    "mini_rag_market_baseline": {
+      "domain": "Systems",
+      "tier": "Entry",
+      "min_lpa": 3.0,
+      "max_lpa": 5.0,
+      "prompt_injection": "MARKET BASELINE INJECTION: For domain 'Systems', a student with master score 27.29 falls into the 'Entry' tier. Your forecasted expected_salary_band MUST strictly bound between 3.0 LPA and 5.0 LPA."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "0-30",
+      "historical_sample_size": 45,
+      "historical_placed": 8,
+      "historical_observed_rate": 17.8,
+      "predicted_probability": 25.0,
+      "deviation_pct": 7.2,
+      "alignment": "Strong Alignment"
+    },
+    "cached_hit": false
+  },
+  "ba7ab3331ecbe854": {
+    "predicted_domain": "Systems",
+    "recommended_roles": [
+      "Systems Engineer",
+      "Backend Engineer",
+      "Distributed Systems Engineer"
+    ],
+    "placement_probability": 25.0,
+    "expected_salary_band": {
+      "min_lpa": 3.0,
+      "max_lpa": 5.0
+    },
+    "career_readiness": "High Risk / Not Placed",
+    "key_differentiators": [
+      "Strong problem-solving skills",
+      "High algorithmic proficiency",
+      "Consistent performance on LeetCode"
+    ],
+    "improvement_areas": [
+      "Gain practical project experience",
+      "Develop a GitHub portfolio",
+      "Verify domain-specific skills"
+    ],
+    "reasoning": "The employability index indicates a high risk of not being placed due to low market readiness and technical competence scores. The semantic profile suggests a general software engineering focus, but the lack of practical experience and GitHub evidence limits domain specificity. The Systems domain is anchored based on problem-solving skills, with roles in systems engineering recommended.",
+    "salary_reasoning": "Given the master score of 24.65 and the Systems domain classification, the expected salary band is strictly within the 3.0 to 5.0 LPA range, aligning with the entry-level market baseline for this domain. The candidate's strong problem-solving skills support this salary expectation despite the high-risk placement status.",
+    "risk_factors": [
+      "Lack of practical experience",
+      "No GitHub repositories",
+      "Unverified domain-specific skills"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 22.34,
+      "state": "HIGH_RISK_NOT_PLACED",
+      "pillar_scores": {
+        "pillar1_tech_competence": 24.65,
+        "pillar2_communication": 45.0,
+        "pillar3_market_readiness": 0.0
+      },
+      "max_allowed_placement_probability": 25.0,
+      "gating_reason": "Master score (24.6) indicates high risk."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "Systems",
+      "anchored_roles": [
+        "Systems Engineer",
+        "Backend Engineer",
+        "Distributed Systems Engineer"
+      ],
+      "semantic_intersection_counts": {
+        "Web Development": 1,
+        "Systems": 3
+      }
+    },
+    "mini_rag_market_baseline": {
+      "domain": "Systems",
+      "tier": "Entry",
+      "min_lpa": 3.0,
+      "max_lpa": 5.0,
+      "prompt_injection": "MARKET BASELINE INJECTION: For domain 'Systems', a student with master score 24.65 falls into the 'Entry' tier. Your forecasted expected_salary_band MUST strictly bound between 3.0 LPA and 5.0 LPA."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "0-30",
+      "historical_sample_size": 45,
+      "historical_placed": 8,
+      "historical_observed_rate": 17.8,
+      "predicted_probability": 25.0,
+      "deviation_pct": 7.2,
+      "alignment": "Strong Alignment"
+    },
+    "cached_hit": false
+  },
+  "0891c67d4a2f1b70": {
+    "predicted_domain": "Systems",
+    "recommended_roles": [
+      "Systems Engineer",
+      "Backend Engineer",
+      "Distributed Systems Engineer"
+    ],
+    "placement_probability": 25.0,
+    "expected_salary_band": {
+      "min_lpa": 3.0,
+      "max_lpa": 5.0
+    },
+    "career_readiness": "High Risk / Not Placed",
+    "key_differentiators": [
+      "Strong problem-solving skills",
+      "Proficiency in multiple programming languages"
+    ],
+    "improvement_areas": [
+      "Gain practical project experience",
+      "Develop a GitHub portfolio",
+      "Enhance domain-specific skills"
+    ],
+    "reasoning": "Devansh's strong problem-solving skills and proficiency in multiple programming languages align with the Systems domain. However, the lack of practical experience and GitHub evidence limits his market readiness, resulting in a high-risk placement status. The employability index and state machine gating restrict the placement probability to 25%.",
+    "salary_reasoning": "Given the master score of 20.96 and the Systems domain classification, Devansh falls into the 'Entry' tier for salary expectations. The historical market baseline for this tier is between 3.0 LPA and 5.0 LPA, which aligns with the expected salary band.",
+    "risk_factors": [
+      "Lack of practical project experience",
+      "No GitHub repository evidence",
+      "Unverified domain-specific skills"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 20.68,
+      "state": "HIGH_RISK_NOT_PLACED",
+      "pillar_scores": {
+        "pillar1_tech_competence": 20.96,
+        "pillar2_communication": 45.0,
+        "pillar3_market_readiness": 0.0
+      },
+      "max_allowed_placement_probability": 25.0,
+      "gating_reason": "Master score (21.0) indicates high risk."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "Systems",
+      "anchored_roles": [
+        "Systems Engineer",
+        "Backend Engineer",
+        "Distributed Systems Engineer"
+      ],
+      "semantic_intersection_counts": {
+        "Systems": 3,
+        "Web Development": 1
+      }
+    },
+    "mini_rag_market_baseline": {
+      "domain": "Systems",
+      "tier": "Entry",
+      "min_lpa": 3.0,
+      "max_lpa": 5.0,
+      "prompt_injection": "MARKET BASELINE INJECTION: For domain 'Systems', a student with master score 20.96 falls into the 'Entry' tier. Your forecasted expected_salary_band MUST strictly bound between 3.0 LPA and 5.0 LPA."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "0-30",
+      "historical_sample_size": 45,
+      "historical_placed": 8,
+      "historical_observed_rate": 17.8,
+      "predicted_probability": 25.0,
+      "deviation_pct": 7.2,
+      "alignment": "Strong Alignment"
+    },
+    "cached_hit": false
+  },
+  "2f94451ad9014bb9": {
+    "predicted_domain": "Systems",
+    "recommended_roles": [
+      "Systems Engineer",
+      "Backend Engineer",
+      "Distributed Systems Engineer"
+    ],
+    "placement_probability": 50.0,
+    "expected_salary_band": {
+      "min_lpa": 5.0,
+      "max_lpa": 8.0
+    },
+    "career_readiness": "Needs Development",
+    "key_differentiators": [
+      "Strong problem-solving skills",
+      "High competitive programming performance"
+    ],
+    "improvement_areas": [
+      "Gain practical project experience",
+      "Contribute to open-source projects",
+      "Develop verified technical skills"
+    ],
+    "reasoning": "Vaibhav's strong problem-solving skills and competitive programming performance anchor him in the Systems domain. However, the lack of practical experience and GitHub contributions limits his market readiness, resulting in a 'Needs Development' state. The employability index and state machine gating cap his placement probability at 50%.",
+    "salary_reasoning": "Based on Vaibhav's master score of 44.98 and the Systems domain classification, the expected salary band is strictly between 5.0 LPA and 8.0 LPA, aligning with the 'Mid' tier market baseline. This reflects his strong problem-solving skills but limited practical experience.",
+    "risk_factors": [
+      "Lack of practical experience",
+      "No GitHub contributions",
+      "Unverified technical skills"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 31.49,
+      "state": "NEEDS_DEVELOPMENT",
+      "pillar_scores": {
+        "pillar1_tech_competence": 44.98,
+        "pillar2_communication": 45.0,
+        "pillar3_market_readiness": 0.0
+      },
+      "max_allowed_placement_probability": 50.0,
+      "gating_reason": "Master score passes minimum thresholds but requires core skill development."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "Systems",
+      "anchored_roles": [
+        "Systems Engineer",
+        "Backend Engineer",
+        "Distributed Systems Engineer"
+      ],
+      "semantic_intersection_counts": {
+        "Web Development": 1,
+        "Systems": 3
+      }
+    },
+    "mini_rag_market_baseline": {
+      "domain": "Systems",
+      "tier": "Mid",
+      "min_lpa": 5.0,
+      "max_lpa": 8.0,
+      "prompt_injection": "MARKET BASELINE INJECTION: For domain 'Systems', a student with master score 44.98 falls into the 'Mid' tier. Your forecasted expected_salary_band MUST strictly bound between 5.0 LPA and 8.0 LPA."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "30-50",
+      "historical_sample_size": 62,
+      "historical_placed": 28,
+      "historical_observed_rate": 45.2,
+      "predicted_probability": 50.0,
+      "deviation_pct": 4.8,
+      "alignment": "Strong Alignment"
+    },
+    "cached_hit": false
+  },
+  "a0ec3f01002aa3ea": {
+    "predicted_domain": "Systems",
+    "recommended_roles": [
+      "Systems Engineer",
+      "Backend Engineer",
+      "Distributed Systems Engineer"
+    ],
+    "placement_probability": 50.0,
+    "expected_salary_band": {
+      "min_lpa": 5.0,
+      "max_lpa": 8.0
+    },
+    "career_readiness": "Needs Development",
+    "key_differentiators": [
+      "Strong web development skills",
+      "Proficiency in JavaScript and Python",
+      "High project complexity and impact"
+    ],
+    "improvement_areas": [
+      "Increase community engagement on GitHub",
+      "Develop advanced AI/ML projects",
+      "Enhance competitive programming skills"
+    ],
+    "reasoning": "Yashika's employability index indicates a 'Needs Development' state, with strong technical competence in web technologies but limited AI/ML depth. The semantic domain anchoring suggests a fit for Systems roles due to the intersection of skills. The employability state machine caps placement probability at 50% due to core skill development needs.",
+    "salary_reasoning": "The expected salary band is grounded in the 'Mid' tier for the Systems domain, with a master score of 59.54. Historical market data supports a salary range of 5.0 to 8.0 LPA, aligning with the candidate's technical skills and project experience.",
+    "risk_factors": [
+      "Limited GitHub community engagement",
+      "Moderate competitive programming performance",
+      "Lack of advanced AI/ML project evidence"
+    ],
+    "forecast_status": "success",
+    "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+    "employability_state_machine": {
+      "employability_index": 54.16,
+      "state": "NEEDS_DEVELOPMENT",
+      "pillar_scores": {
+        "pillar1_tech_competence": 29.06,
+        "pillar2_communication": 87.33,
+        "pillar3_market_readiness": 64.17
+      },
+      "max_allowed_placement_probability": 50.0,
+      "gating_reason": "Master score passes minimum thresholds but requires core skill development."
+    },
+    "semantic_domain_anchor": {
+      "anchored_primary_domain": "Systems",
+      "anchored_roles": [
+        "Systems Engineer",
+        "Backend Engineer",
+        "Distributed Systems Engineer"
+      ],
+      "semantic_intersection_counts": {
+        "Web Development": 4,
+        "Systems": 5
+      }
+    },
+    "mini_rag_market_baseline": {
+      "domain": "Systems",
+      "tier": "Mid",
+      "min_lpa": 5.0,
+      "max_lpa": 8.0,
+      "prompt_injection": "MARKET BASELINE INJECTION: For domain 'Systems', a student with master score 59.54 falls into the 'Mid' tier. Your forecasted expected_salary_band MUST strictly bound between 5.0 LPA and 8.0 LPA."
+    },
+    "backtesting_validation": {
+      "status": "validated",
+      "score_range": "50-70",
+      "historical_sample_size": 88,
+      "historical_placed": 64,
+      "historical_observed_rate": 72.7,
+      "predicted_probability": 50.0,
+      "deviation_pct": 22.7,
+      "alignment": "Weak Alignment \u2014 Review Required"
+    },
+    "cached_hit": false
+  }
+}

@@ -1,0 +1,8 @@
+streamlit
+langchain
+langgraph
+langchain-core
+langchain-huggingface
+typing_extensions
+dotenv
+langchain-openai

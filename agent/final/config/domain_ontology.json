@@ -1,0 +1,35 @@
+{
+    "skill_to_domain": {
+        "description": "Maps individual technical skills to their primary industry domain classification.",
+        "mapping": {
+            "React": "Web Development", "Angular": "Web Development", "Vue": "Web Development", "Next.js": "Web Development",
+            "HTML": "Web Development", "CSS": "Web Development", "JavaScript": "Web Development", "TypeScript": "Web Development",
+            "Node.js": "Web Development", "Express": "Web Development", "Django": "Web Development", "Flask": "Web Development",
+            "TensorFlow": "AI/ML", "PyTorch": "AI/ML", "Scikit-learn": "AI/ML", "NLP": "AI/ML", "LLM": "AI/ML",
+            "Docker": "DevOps", "Kubernetes": "DevOps", "Jenkins": "DevOps", "CI/CD": "DevOps", "AWS": "DevOps",
+            "Spark": "Data Engineering", "Kafka": "Data Engineering", "SQL": "Data Engineering", "PostgreSQL": "Data Engineering",
+            "MongoDB": "Data Engineering", "React Native": "Mobile", "Flutter": "Mobile", "Swift": "Mobile",
+            "Solidity": "Web3", "Blockchain": "Web3", "Metasploit": "CyberSecurity", "Cryptography": "CyberSecurity",
+            "C": "Systems", "C++": "Systems", "Rust": "Systems", "Go": "Systems", "Figma": "UI/UX"
+        }
+    },
+    "domain_to_roles": {
+        "description": "Maps each domain to a prioritized list of suitable industry roles.",
+        "mapping": {
+            "Web Development": ["Frontend Developer", "Backend Developer", "Full Stack Developer"],
+            "AI/ML": ["ML Engineer", "Data Scientist", "AI Research Engineer"],
+            "DevOps": ["DevOps Engineer", "Site Reliability Engineer", "Cloud Engineer"],
+            "Data Engineering": ["Data Engineer", "Database Administrator", "Data Platform Engineer"],
+            "Mobile": ["Mobile App Developer", "Android Developer", "iOS Developer"],
+            "Web3": ["Blockchain Developer", "Smart Contract Engineer", "Web3 Developer"],
+            "CyberSecurity": ["Security Analyst", "Penetration Tester", "Security Engineer"],
+            "Systems": ["Systems Engineer", "Backend Engineer", "Distributed Systems Engineer"],
+            "UI/UX": ["UI/UX Designer", "Product Designer", "UX Researcher"],
+            "General Software Engineering": ["Software Development Engineer (SDE)", "Software Engineer", "Application Developer"]
+        }
+    },
+    "domain_priority_order": [
+        "AI/ML", "Systems", "DevOps", "Data Engineering", "Web Development",
+        "CyberSecurity", "Mobile", "Web3", "UI/UX", "General Software Engineering"
+    ]
+}

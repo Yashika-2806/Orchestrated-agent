@@ -1,0 +1,164 @@
+{
+    "student_id": "1",
+    "name": "Akshat Gupta",
+    "execution_timestamp": "2026-06-30T12:27:52.972311+00:00",
+    "evaluations": {
+        "resume_agent": {
+            "agent": "resume",
+            "status": "failed",
+            "error_log": "Resume Thread Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kw6kkbkae8bv134feahd901f` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98810, Requested 6123. Please try again in 1h11m2.112s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+            "final_score": 0
+        },
+        "github_agent": {
+            "agent": "github",
+            "status": "success",
+            "final_score": 65.79,
+            "sub_scores": {
+                "consistency": 38.81,
+                "community": 72.0,
+                "technology": 100.0,
+                "advanced": 0.0,
+                "management": 76.2
+            },
+            "narrative_context": {
+                "top_technologies": [
+                    "HTML",
+                    "JavaScript",
+                    "CSS",
+                    "Python",
+                    "Kotlin"
+                ],
+                "recent_focus_areas": [
+                    {
+                        "name": "AI_agent_blog_generator",
+                        "description": "No description provided.",
+                        "primary_language": "JavaScript"
+                    },
+                    {
+                        "name": "Java",
+                        "description": "No description provided.",
+                        "primary_language": "Java"
+                    },
+                    {
+                        "name": "PulseTalk",
+                        "description": "No description provided.",
+                        "primary_language": "JavaScript"
+                    },
+                    {
+                        "name": "60-sec-Reflex-Rush",
+                        "description": "No description provided.",
+                        "primary_language": "Kotlin"
+                    },
+                    {
+                        "name": "Inscribe",
+                        "description": "No description provided.",
+                        "primary_language": "JavaScript"
+                    },
+                    {
+                        "name": "twin_mind_fullstack",
+                        "description": "No description provided.",
+                        "primary_language": "Unknown"
+                    },
+                    {
+                        "name": "AI_Tutor_Orchestrator",
+                        "description": "No description provided.",
+                        "primary_language": "Python"
+                    },
+                    {
+                        "name": "Financial_News_Sentiment_Analysis",
+                        "description": "No description provided.",
+                        "primary_language": "Python"
+                    },
+                    {
+                        "name": "Job_Portal",
+                        "description": "No description provided.",
+                        "primary_language": "JavaScript"
+                    },
+                    {
+                        "name": "My-Portfolio",
+                        "description": "No description provided.",
+                        "primary_language": "JavaScript"
+                    }
+                ]
+            }
+        },
+        "cp_agent": {
+            "agent": "cp",
+            "status": "success",
+            "final_score": 88.23,
+            "sub_scores": {
+                "leetcode": {
+                    "clout": 100.0,
+                    "consistency": 100.0,
+                    "velocity": 100.0,
+                    "total": 100.0
+                },
+                "codeforces": {
+                    "clout": 100.0,
+                    "consistency": 100.0,
+                    "velocity": 88.85786802030456,
+                    "total": 96.65736040609137
+                },
+                "codechef": {
+                    "clout": 68.84444444444443,
+                    "consistency": 100.0,
+                    "velocity": 50.0,
+                    "total": 72.53777777777778
+                },
+                "hackerrank": {
+                    "clout": 73.33333333333333,
+                    "consistency": 7.844164383561644,
+                    "velocity": 52.0,
+                    "total": 47.286582648401826
+                }
+            },
+            "narrative_context": {
+                "platforms_evaluated": [
+                    "leetcode",
+                    "codeforces",
+                    "codechef",
+                    "hackerrank"
+                ],
+                "aggregation_method": "Weighted Average (4 platforms)"
+            }
+        },
+        "linkedin_agent": {
+            "agent": "linkedin",
+            "status": "success",
+            "final_score": 39.8,
+            "sub_scores": {
+                "consistency": 28.03,
+                "engagement": 19.94,
+                "depth": 16.0,
+                "authority": 76.05,
+                "optimization": 100.0
+            },
+            "narrative_context": {
+                "top_skills": [
+                    [
+                        "AngularJS",
+                        0
+                    ],
+                    [
+                        "MySQL",
+                        0
+                    ],
+                    [
+                        "PhpMyAdmin",
+                        0
+                    ],
+                    [
+                        "Laravel",
+                        0
+                    ],
+                    [
+                        "Public Speaking",
+                        0
+                    ]
+                ],
+                "total_experience_roles": 2,
+                "total_certifications": 4
+            }
+        }
+    }
+}

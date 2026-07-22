@@ -1,0 +1,800 @@
+{
+    "student_id": "2415500076",
+    "name": "Anmol Sharma",
+    "execution_timestamp": "2026-07-04T09:17:39.859696+00:00",
+    "scores": {
+        "resume_score": 0,
+        "github_score": 77.82,
+        "cp_score": 96.91,
+        "master_score": 58.24
+    },
+    "evaluations": {
+        "resume_agent": {
+            "status": "failed",
+            "error_log": "Timeout: Groq LLM extraction exceeded 20s",
+            "final_score": 0
+        },
+        "github_agent": {
+            "agent": "github",
+            "status": "success",
+            "final_score": 77.82,
+            "sub_scores": {
+                "consistency": 45.11,
+                "community": 100.0,
+                "technology": 100.0,
+                "advanced": 3.01,
+                "management": 90.0
+            },
+            "narrative_context": {
+                "top_technologies": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Python",
+                    "TypeScript"
+                ],
+                "recent_focus_areas": [
+                    {
+                        "name": "csed-club-website",
+                        "description": "No description provided.",
+                        "primary_language": "TypeScript"
+                    },
+                    {
+                        "name": "skillify-india-hub",
+                        "description": "No description provided.",
+                        "primary_language": "TypeScript"
+                    },
+                    {
+                        "name": "ledgerVault",
+                        "description": "No description provided.",
+                        "primary_language": "TypeScript"
+                    },
+                    {
+                        "name": "network_bouncer",
+                        "description": "No description provided.",
+                        "primary_language": "Unknown"
+                    },
+                    {
+                        "name": "GokulHealth",
+                        "description": "No description provided.",
+                        "primary_language": "TypeScript"
+                    },
+                    {
+                        "name": "App",
+                        "description": "No description provided.",
+                        "primary_language": "TypeScript"
+                    },
+                    {
+                        "name": "IIITD",
+                        "description": "No description provided.",
+                        "primary_language": "Unknown"
+                    },
+                    {
+                        "name": "property_dealer",
+                        "description": "No description provided.",
+                        "primary_language": "Python"
+                    },
+                    {
+                        "name": "rover_new",
+                        "description": "No description provided.",
+                        "primary_language": "HTML"
+                    },
+                    {
+                        "name": "ExpoBot",
+                        "description": "No description provided.",
+                        "primary_language": "Python"
+                    }
+                ],
+                "ast_code_complexity": {
+                    "avg_cyclomatic_complexity": 1.0,
+                    "maintainability_index": 96.5,
+                    "total_functions_analyzed": 36,
+                    "gamification_flags_count": 3,
+                    "gamification_warnings": [
+                        {
+                            "repo": "GokulHealth",
+                            "user_commits": 64,
+                            "cyclomatic_complexity": 1,
+                            "reason": "High commit count with trivial AST code complexity (Gamification Warning)"
+                        },
+                        {
+                            "repo": "skillify-india-hub",
+                            "user_commits": 43,
+                            "cyclomatic_complexity": 1,
+                            "reason": "High commit count with trivial AST code complexity (Gamification Warning)"
+                        },
+                        {
+                            "repo": "ledgerVault",
+                            "user_commits": 44,
+                            "cyclomatic_complexity": 1,
+                            "reason": "High commit count with trivial AST code complexity (Gamification Warning)"
+                        }
+                    ]
+                },
+                "academic_dsa_verification": {
+                    "academic_gpa": 8.5,
+                    "dsa_academic_score": 85.0,
+                    "has_dsa_repo_proof": false,
+                    "matched_dsa_repos": [],
+                    "low_practical_consistency_warning": true,
+                    "warning_message": "WARNING: Candidate scored high in academic DSA/GPA but has ZERO algorithm/DSA repositories on GitHub."
+                }
+            }
+        },
+        "cp_agent": {
+            "agent": "cp",
+            "status": "success",
+            "final_score": 96.91,
+            "sub_scores": {
+                "leetcode": {
+                    "clout": 100.0,
+                    "consistency": 100.0,
+                    "velocity": 100.0,
+                    "total": 100.0,
+                    "persona": "Contest Hunter",
+                    "solved_count": 3977
+                },
+                "codeforces": {
+                    "clout": 100.0,
+                    "consistency": 100.0,
+                    "velocity": 88.85786802030456,
+                    "total": 97.77157360406092,
+                    "persona": "Contest Hunter",
+                    "solved_count": 4444
+                },
+                "codechef": {
+                    "clout": 68.84444444444443,
+                    "consistency": 100.0,
+                    "velocity": 50.0,
+                    "total": 77.53777777777778,
+                    "persona": "Balanced Developer",
+                    "solved_count": 518
+                },
+                "hackerrank": {
+                    "clout": 73.33333333333333,
+                    "consistency": 7.844164383561644,
+                    "velocity": 52.0,
+                    "total": 42.87099908675799,
+                    "persona": "Balanced Developer",
+                    "solved_count": 68
+                }
+            },
+            "narrative_context": {
+                "platforms_evaluated": [
+                    "leetcode",
+                    "codeforces",
+                    "codechef",
+                    "hackerrank"
+                ],
+                "aggregation_method": "Dynamic Persona Allocation (4 platforms)",
+                "sigmoidal_multiplier": 1.103,
+                "platform_weights_applied": {
+                    "leetcode": 0.344,
+                    "codeforces": 0.349,
+                    "codechef": 0.179,
+                    "hackerrank": 0.129
+                },
+                "unified_elo_rating": 1886.0,
+                "single_weekend_crunch_risk": false,
+                "crunch_ratio_3day": 0.029
+            }
+        }
+    },
+    "blackboard_snapshot": {
+        "slots": {
+            "github": {
+                "agent": "github",
+                "status": "success",
+                "final_score": 77.82,
+                "sub_scores": {
+                    "consistency": 45.11,
+                    "community": 100.0,
+                    "technology": 100.0,
+                    "advanced": 3.01,
+                    "management": 90.0
+                },
+                "narrative_context": {
+                    "top_technologies": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "Python",
+                        "TypeScript"
+                    ],
+                    "recent_focus_areas": [
+                        {
+                            "name": "csed-club-website",
+                            "description": "No description provided.",
+                            "primary_language": "TypeScript"
+                        },
+                        {
+                            "name": "skillify-india-hub",
+                            "description": "No description provided.",
+                            "primary_language": "TypeScript"
+                        },
+                        {
+                            "name": "ledgerVault",
+                            "description": "No description provided.",
+                            "primary_language": "TypeScript"
+                        },
+                        {
+                            "name": "network_bouncer",
+                            "description": "No description provided.",
+                            "primary_language": "Unknown"
+                        },
+                        {
+                            "name": "GokulHealth",
+                            "description": "No description provided.",
+                            "primary_language": "TypeScript"
+                        },
+                        {
+                            "name": "App",
+                            "description": "No description provided.",
+                            "primary_language": "TypeScript"
+                        },
+                        {
+                            "name": "IIITD",
+                            "description": "No description provided.",
+                            "primary_language": "Unknown"
+                        },
+                        {
+                            "name": "property_dealer",
+                            "description": "No description provided.",
+                            "primary_language": "Python"
+                        },
+                        {
+                            "name": "rover_new",
+                            "description": "No description provided.",
+                            "primary_language": "HTML"
+                        },
+                        {
+                            "name": "ExpoBot",
+                            "description": "No description provided.",
+                            "primary_language": "Python"
+                        }
+                    ],
+                    "ast_code_complexity": {
+                        "avg_cyclomatic_complexity": 1.0,
+                        "maintainability_index": 96.5,
+                        "total_functions_analyzed": 36,
+                        "gamification_flags_count": 3,
+                        "gamification_warnings": [
+                            {
+                                "repo": "GokulHealth",
+                                "user_commits": 64,
+                                "cyclomatic_complexity": 1,
+                                "reason": "High commit count with trivial AST code complexity (Gamification Warning)"
+                            },
+                            {
+                                "repo": "skillify-india-hub",
+                                "user_commits": 43,
+                                "cyclomatic_complexity": 1,
+                                "reason": "High commit count with trivial AST code complexity (Gamification Warning)"
+                            },
+                            {
+                                "repo": "ledgerVault",
+                                "user_commits": 44,
+                                "cyclomatic_complexity": 1,
+                                "reason": "High commit count with trivial AST code complexity (Gamification Warning)"
+                            }
+                        ]
+                    },
+                    "academic_dsa_verification": {
+                        "academic_gpa": 8.5,
+                        "dsa_academic_score": 85.0,
+                        "has_dsa_repo_proof": false,
+                        "matched_dsa_repos": [],
+                        "low_practical_consistency_warning": true,
+                        "warning_message": "WARNING: Candidate scored high in academic DSA/GPA but has ZERO algorithm/DSA repositories on GitHub."
+                    }
+                }
+            },
+            "resume": {
+                "status": "failed",
+                "error_log": "Timeout: Groq LLM extraction exceeded 20s",
+                "final_score": 0
+            },
+            "cp": {
+                "agent": "cp",
+                "status": "success",
+                "final_score": 96.91,
+                "sub_scores": {
+                    "leetcode": {
+                        "clout": 100.0,
+                        "consistency": 100.0,
+                        "velocity": 100.0,
+                        "total": 100.0,
+                        "persona": "Contest Hunter",
+                        "solved_count": 3977
+                    },
+                    "codeforces": {
+                        "clout": 100.0,
+                        "consistency": 100.0,
+                        "velocity": 88.85786802030456,
+                        "total": 97.77157360406092,
+                        "persona": "Contest Hunter",
+                        "solved_count": 4444
+                    },
+                    "codechef": {
+                        "clout": 68.84444444444443,
+                        "consistency": 100.0,
+                        "velocity": 50.0,
+                        "total": 77.53777777777778,
+                        "persona": "Balanced Developer",
+                        "solved_count": 518
+                    },
+                    "hackerrank": {
+                        "clout": 73.33333333333333,
+                        "consistency": 7.844164383561644,
+                        "velocity": 52.0,
+                        "total": 42.87099908675799,
+                        "persona": "Balanced Developer",
+                        "solved_count": 68
+                    }
+                },
+                "narrative_context": {
+                    "platforms_evaluated": [
+                        "leetcode",
+                        "codeforces",
+                        "codechef",
+                        "hackerrank"
+                    ],
+                    "aggregation_method": "Dynamic Persona Allocation (4 platforms)",
+                    "sigmoidal_multiplier": 1.103,
+                    "platform_weights_applied": {
+                        "leetcode": 0.344,
+                        "codeforces": 0.349,
+                        "codechef": 0.179,
+                        "hackerrank": 0.129
+                    },
+                    "unified_elo_rating": 1886.0,
+                    "single_weekend_crunch_risk": false,
+                    "crunch_ratio_3day": 0.029
+                }
+            },
+            "metadata": {}
+        },
+        "query_log": [
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "TypeScript",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "TypeScript",
+                    "status": "STRONGLY_VERIFIED",
+                    "commit_weight": 150.0,
+                    "repo_count": 6,
+                    "cp_solved_count": 9007,
+                    "proof_sources": [
+                        "GitHub Technologies",
+                        "GitHub Repositories"
+                    ],
+                    "details": "Strong evidence found across GitHub Technologies, GitHub Repositories. Repo count: 6."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "C++",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "C++",
+                    "status": "PARTIALLY_VERIFIED",
+                    "commit_weight": 0.0,
+                    "repo_count": 0,
+                    "cp_solved_count": 9007,
+                    "proof_sources": [
+                        "CP Platforms (9007 Solved)"
+                    ],
+                    "details": "Partial evidence found in CP Platforms (9007 Solved). Repo count: 0."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "HTML",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "HTML",
+                    "status": "STRONGLY_VERIFIED",
+                    "commit_weight": 70.0,
+                    "repo_count": 2,
+                    "cp_solved_count": 9007,
+                    "proof_sources": [
+                        "GitHub Technologies",
+                        "GitHub Repositories"
+                    ],
+                    "details": "Strong evidence found across GitHub Technologies, GitHub Repositories. Repo count: 2."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "Docker",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "Docker",
+                    "status": "UNVERIFIED_CLAIM",
+                    "commit_weight": 0.0,
+                    "repo_count": 0,
+                    "cp_solved_count": 9007,
+                    "proof_sources": [],
+                    "details": "No code commits or contest activity found matching skill 'Docker'."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "JavaScript",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "JavaScript",
+                    "status": "STRONGLY_VERIFIED",
+                    "commit_weight": 50.0,
+                    "repo_count": 1,
+                    "cp_solved_count": 9007,
+                    "proof_sources": [
+                        "GitHub Technologies",
+                        "CP Platforms (9007 Solved)"
+                    ],
+                    "details": "Strong evidence found across GitHub Technologies, CP Platforms (9007 Solved). Repo count: 1."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "Python",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "Python",
+                    "status": "STRONGLY_VERIFIED",
+                    "commit_weight": 90.0,
+                    "repo_count": 3,
+                    "cp_solved_count": 9007,
+                    "proof_sources": [
+                        "GitHub Technologies",
+                        "GitHub Repositories",
+                        "CP Platforms (9007 Solved)"
+                    ],
+                    "details": "Strong evidence found across GitHub Technologies, GitHub Repositories, CP Platforms (9007 Solved). Repo count: 3."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "CSS",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "CSS",
+                    "status": "STRONGLY_VERIFIED",
+                    "commit_weight": 50.0,
+                    "repo_count": 1,
+                    "cp_solved_count": 9007,
+                    "proof_sources": [
+                        "GitHub Technologies"
+                    ],
+                    "details": "Strong evidence found across GitHub Technologies. Repo count: 1."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "Problem Solving",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "Problem Solving",
+                    "status": "PARTIALLY_VERIFIED",
+                    "commit_weight": 0.0,
+                    "repo_count": 0,
+                    "cp_solved_count": 9007,
+                    "proof_sources": [
+                        "CP Platforms (9007 Solved)"
+                    ],
+                    "details": "Partial evidence found in CP Platforms (9007 Solved). Repo count: 0."
+                }
+            },
+            {
+                "query": {
+                    "query_type": "skill_validation",
+                    "skill": "React",
+                    "target_agent": "all",
+                    "min_commits": 1,
+                    "min_repos": 1
+                },
+                "response": {
+                    "skill": "React",
+                    "status": "UNVERIFIED_CLAIM",
+                    "commit_weight": 0.0,
+                    "repo_count": 0,
+                    "cp_solved_count": 9007,
+                    "proof_sources": [],
+                    "details": "No code commits or contest activity found matching skill 'React'."
+                }
+            }
+        ]
+    },
+    "inter_agent_consensus": {
+        "validated_primary_domain": "Web Development",
+        "validated_secondary_domain": null,
+        "domain_validation_score": 85.0,
+        "verified_skills": [
+            {
+                "skill": "JavaScript",
+                "status": "Strongly Verified",
+                "evidence_source": "GitHub"
+            },
+            {
+                "skill": "TypeScript",
+                "status": "Strongly Verified",
+                "evidence_source": "GitHub"
+            },
+            {
+                "skill": "Python",
+                "status": "Partially Verified",
+                "evidence_source": "GitHub"
+            },
+            {
+                "skill": "Algorithmic Problem Solving",
+                "status": "Strongly Verified",
+                "evidence_source": "CP"
+            }
+        ],
+        "unverified_resume_claims": [],
+        "inter_agent_brainstorm_transcript": [
+            {
+                "agent": "GitHub Agent",
+                "message": "Anmol has a strong focus on TypeScript and JavaScript in his repositories, indicating a primary domain in Web Development."
+            },
+            {
+                "agent": "CP Agent",
+                "message": "Anmol's CP performance is exceptional, but it doesn't directly point to a specific domain like AI/ML or Web Development."
+            },
+            {
+                "agent": "GitHub Agent",
+                "message": "The lack of AI/ML or other domain-specific repositories suggests Web Development as the primary domain."
+            },
+            {
+                "agent": "CP Agent",
+                "message": "Agreed. While his problem-solving skills are strong, they complement his Web Development work rather than define a separate domain."
+            },
+            {
+                "agent": "GitHub Agent",
+                "message": "Let's finalize Web Development as the primary domain with high confidence."
+            }
+        ],
+        "validation_reasoning": "The consensus on Web Development as the primary domain is based on the strong presence of JavaScript and TypeScript in Anmol's GitHub repositories, which aligns with typical Web Development technologies. The CP Agent's findings of strong problem-solving skills support his technical proficiency but do not indicate a separate domain. The absence of AI/ML or other domain-specific projects in his repositories further solidifies Web Development as the primary domain.",
+        "communication_status": "success",
+        "protocol_version": "2.1 (Strict Schema Contract & Shared Blackboard)",
+        "strict_schema_query_logs": [
+            {
+                "skill": "TypeScript",
+                "status": "STRONGLY_VERIFIED",
+                "commit_weight": 150.0,
+                "repo_count": 6,
+                "cp_solved_count": 9007,
+                "proof_sources": [
+                    "GitHub Technologies",
+                    "GitHub Repositories"
+                ],
+                "details": "Strong evidence found across GitHub Technologies, GitHub Repositories. Repo count: 6."
+            },
+            {
+                "skill": "C++",
+                "status": "PARTIALLY_VERIFIED",
+                "commit_weight": 0.0,
+                "repo_count": 0,
+                "cp_solved_count": 9007,
+                "proof_sources": [
+                    "CP Platforms (9007 Solved)"
+                ],
+                "details": "Partial evidence found in CP Platforms (9007 Solved). Repo count: 0."
+            },
+            {
+                "skill": "HTML",
+                "status": "STRONGLY_VERIFIED",
+                "commit_weight": 70.0,
+                "repo_count": 2,
+                "cp_solved_count": 9007,
+                "proof_sources": [
+                    "GitHub Technologies",
+                    "GitHub Repositories"
+                ],
+                "details": "Strong evidence found across GitHub Technologies, GitHub Repositories. Repo count: 2."
+            },
+            {
+                "skill": "Docker",
+                "status": "UNVERIFIED_CLAIM",
+                "commit_weight": 0.0,
+                "repo_count": 0,
+                "cp_solved_count": 9007,
+                "proof_sources": [],
+                "details": "No code commits or contest activity found matching skill 'Docker'."
+            },
+            {
+                "skill": "JavaScript",
+                "status": "STRONGLY_VERIFIED",
+                "commit_weight": 50.0,
+                "repo_count": 1,
+                "cp_solved_count": 9007,
+                "proof_sources": [
+                    "GitHub Technologies",
+                    "CP Platforms (9007 Solved)"
+                ],
+                "details": "Strong evidence found across GitHub Technologies, CP Platforms (9007 Solved). Repo count: 1."
+            },
+            {
+                "skill": "Python",
+                "status": "STRONGLY_VERIFIED",
+                "commit_weight": 90.0,
+                "repo_count": 3,
+                "cp_solved_count": 9007,
+                "proof_sources": [
+                    "GitHub Technologies",
+                    "GitHub Repositories",
+                    "CP Platforms (9007 Solved)"
+                ],
+                "details": "Strong evidence found across GitHub Technologies, GitHub Repositories, CP Platforms (9007 Solved). Repo count: 3."
+            },
+            {
+                "skill": "CSS",
+                "status": "STRONGLY_VERIFIED",
+                "commit_weight": 50.0,
+                "repo_count": 1,
+                "cp_solved_count": 9007,
+                "proof_sources": [
+                    "GitHub Technologies"
+                ],
+                "details": "Strong evidence found across GitHub Technologies. Repo count: 1."
+            },
+            {
+                "skill": "Problem Solving",
+                "status": "PARTIALLY_VERIFIED",
+                "commit_weight": 0.0,
+                "repo_count": 0,
+                "cp_solved_count": 9007,
+                "proof_sources": [
+                    "CP Platforms (9007 Solved)"
+                ],
+                "details": "Partial evidence found in CP Platforms (9007 Solved). Repo count: 0."
+            },
+            {
+                "skill": "React",
+                "status": "UNVERIFIED_CLAIM",
+                "commit_weight": 0.0,
+                "repo_count": 0,
+                "cp_solved_count": 9007,
+                "proof_sources": [],
+                "details": "No code commits or contest activity found matching skill 'React'."
+            }
+        ]
+    },
+    "semantic_profile": {
+        "career_intent": "Anmol Sharma is likely to pursue a career in Web Development, leveraging his strong skills in JavaScript and TypeScript.",
+        "primary_domain": "Web Development",
+        "secondary_domain": null,
+        "top_skills": [
+            "JavaScript",
+            "TypeScript",
+            "Python",
+            "HTML",
+            "CSS",
+            "Algorithmic Problem Solving"
+        ],
+        "experience_summary": "Anmol has developed several projects on GitHub, primarily using TypeScript and JavaScript, indicating a focus on web technologies. However, there is a lack of detailed descriptions or evidence of professional internships.",
+        "strengths": [
+            "Strong problem-solving skills",
+            "Proficiency in JavaScript and TypeScript",
+            "High community engagement on GitHub",
+            "Consistent competitive programming performance"
+        ],
+        "gaps": [
+            "Lack of detailed project descriptions",
+            "No evidence of professional internships",
+            "Absence of domain-specific repositories outside Web Development"
+        ],
+        "coding_aptitude_level": "Expert",
+        "project_maturity_level": "Semi-Professional",
+        "synthesis_status": "success"
+    },
+    "forecasting": {
+        "predicted_domain": "Web Development",
+        "domain_confidence": 0.85,
+        "recommended_roles": [
+            "Frontend Developer",
+            "Full Stack Developer",
+            "Web Developer"
+        ],
+        "placement_probability": 85.0,
+        "expected_salary_band": {
+            "min_lpa": 5.0,
+            "max_lpa": 8.5,
+            "label": "Mid Tier"
+        },
+        "career_readiness": "Market Ready",
+        "key_differentiators": [
+            "Strong proficiency in JavaScript and TypeScript",
+            "High community engagement on GitHub",
+            "Consistent competitive programming performance"
+        ],
+        "improvement_areas": [
+            "Enhance communication skills",
+            "Gain professional internship experience",
+            "Provide detailed project descriptions"
+        ],
+        "reasoning": "Anmol's strong technical competence in JavaScript and TypeScript, verified through GitHub, aligns with a career in Web Development. The employability index indicates market readiness, but communication skills need improvement. The expected salary band is grounded in the historical baseline for similar profiles.",
+        "risk_factors": [
+            "Lack of professional internship experience",
+            "Limited domain diversity in projects"
+        ],
+        "forecast_status": "success",
+        "forecast_method": "LLM-Driven (GPT-4o + State Machine + Mini-RAG + Pydantic Guardrail)",
+        "employability_state_machine": {
+            "employability_index": 68.93,
+            "state": "PLACED_MARKET_READY",
+            "pillar_scores": {
+                "pillar1_tech_competence": 89.27,
+                "pillar2_communication": 45.0,
+                "pillar3_market_readiness": 58.36
+            },
+            "max_allowed_placement_probability": 85.0,
+            "gating_reason": "All 3 pillars pass market-readiness thresholds."
+        },
+        "semantic_domain_anchor": {
+            "anchored_primary_domain": "Systems",
+            "anchored_roles": [
+                "Systems Engineer",
+                "Backend Engineer",
+                "Distributed Systems Engineer"
+            ],
+            "semantic_intersection_counts": {
+                "Web Development": 4,
+                "Systems": 5
+            }
+        },
+        "mini_rag_market_baseline": {
+            "score_range": "40-60%",
+            "target_tier": "40_to_60",
+            "retrieved_salary_band": {
+                "min_lpa": 5.0,
+                "max_lpa": 8.5,
+                "label": "Mid Tier"
+            },
+            "prompt_injection": "HISTORICAL LOCAL MARKET MINI-RAG ANCHOR:\nHistorically, students from this institution with a Master Score between 40-60% and domain 'Systems' achieved salary packages between 5.0 LPA and 8.5 LPA (Mid Tier). You MUST ground your estimated salary band strictly within or near this baseline window."
+        },
+        "backtesting_validation": {
+            "status": "validated",
+            "score_range": "50-70",
+            "historical_sample_size": 88,
+            "historical_placed": 64,
+            "historical_observed_rate": 72.7,
+            "predicted_probability": 85.0,
+            "deviation_pct": 12.3,
+            "alignment": "Moderate Alignment"
+        }
+    }
+}
