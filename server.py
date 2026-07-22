@@ -1382,96 +1382,107 @@ async def evaluate_bulk_api(
     records = df.to_dict(orient="records")[:50]
     
     async def evaluate_single(row):
-        name = get_val(row, 'name', 'Unknown Student')
-        roll = get_val(row, 'student_id', '00000')
-        # Strip trailing ".0" pandas float artifact from numeric roll numbers
-        if roll.endswith('.0') and roll[:-2].isdigit():
-            roll = roll[:-2]
-        cpi = get_val(row, 'cpi', '7.5')
-        backlogs = get_val(row, 'backlogs', '0')
-        dsa = get_val(row, 'dsa_marks', '70')
-        eng = get_val(row, 'english_marks', '70')
-        internships = get_val(row, 'internships_count', '0')
-        attendance = get_val(row, 'attendance', '85')
-        
-        github = get_val(row, 'github', '')
-        linkedin = get_val(row, 'linkedin', '')
-        leetcode = get_val(row, 'leetcode', '')
-        codeforces = get_val(row, 'codeforces', '')
-        codechef = get_val(row, 'codechef', '')
-        hackerrank = get_val(row, 'hackerrank', '')
-        resume_link = get_val(row, 'resume', '')
-
-        # Match resume – strip pandas float suffix (.0) from roll numbers
+        roll = "00000"
+        name = "Unknown Student"
+        cpi = "7.5"
+        backlogs = "0"
+        dsa = "70"
+        eng = "70"
+        internships = "0"
+        attendance = "85"
+        github = leetcode = codeforces = codechef = hackerrank = ""
         matched_resume = ""
-        roll_clean = str(roll).lower().strip()
-        # Remove trailing ".0" that pandas adds when reading numeric Excel cells as float
-        if roll_clean.endswith('.0'):
-            roll_clean = roll_clean[:-2]
-        name_clean = str(name).lower().strip().replace(" ", "_")
-        # Also derive a matchable key from the resume column (could be a filename)
-        resume_link_stem = ""
-        if resume_link:
-            resume_link_stem = Path(resume_link).stem.lower().strip()
+        student_payload = {"student_id": roll, "name": name, "agent_targets": {}}
         
-        # 1) Exact match on roll number
-        if roll_clean in saved_resumes:
-            matched_resume = saved_resumes[roll_clean]
-        else:
-            for stem, path in saved_resumes.items():
-                # 2) Bidirectional substring match on roll number
-                if roll_clean and (roll_clean in stem or stem in roll_clean):
-                    matched_resume = path
-                    break
-                # 3) Bidirectional substring match on student name
-                if name_clean and (name_clean in stem or stem in name_clean):
-                    matched_resume = path
-                    break
-                # 4) Match using resume column value from spreadsheet (e.g. filename)
-                if resume_link_stem and (resume_link_stem == stem or resume_link_stem in stem or stem in resume_link_stem):
-                    matched_resume = path
-                    break
+        try:
+            name = get_val(row, 'name', 'Unknown Student')
+            roll = get_val(row, 'student_id', '00000')
+            # Strip trailing ".0" pandas float artifact from numeric roll numbers
+            if roll.endswith('.0') and roll[:-2].isdigit():
+                roll = roll[:-2]
+            cpi = get_val(row, 'cpi', '7.5')
+            backlogs = get_val(row, 'backlogs', '0')
+            dsa = get_val(row, 'dsa_marks', '70')
+            eng = get_val(row, 'english_marks', '70')
+            internships = get_val(row, 'internships_count', '0')
+            attendance = get_val(row, 'attendance', '85')
+            
+            github = get_val(row, 'github', '')
+            linkedin = get_val(row, 'linkedin', '')
+            leetcode = get_val(row, 'leetcode', '')
+            codeforces = get_val(row, 'codeforces', '')
+            codechef = get_val(row, 'codechef', '')
+            hackerrank = get_val(row, 'hackerrank', '')
+            resume_link = get_val(row, 'resume', '')
 
-        # 5) Fallback to resume link/path from spreadsheet column
-        if not matched_resume and resume_link:
-            matched_resume = resume_link
+            # Match resume – strip pandas float suffix (.0) from roll numbers
+            matched_resume = ""
+            roll_clean = str(roll).lower().strip()
+            # Remove trailing ".0" that pandas adds when reading numeric Excel cells as float
+            if roll_clean.endswith('.0'):
+                roll_clean = roll_clean[:-2]
+            name_clean = str(name).lower().strip().replace(" ", "_")
+            # Also derive a matchable key from the resume column (could be a filename)
+            resume_link_stem = ""
+            if resume_link:
+                resume_link_stem = Path(resume_link).stem.lower().strip()
+            
+            # 1) Exact match on roll number
+            if roll_clean in saved_resumes:
+                matched_resume = saved_resumes[roll_clean]
+            else:
+                for stem, path in saved_resumes.items():
+                    # 2) Bidirectional substring match on roll number
+                    if roll_clean and (roll_clean in stem or stem in roll_clean):
+                        matched_resume = path
+                        break
+                    # 3) Bidirectional substring match on student name
+                    if name_clean and (name_clean in stem or stem in name_clean):
+                        matched_resume = path
+                        break
+                    # 4) Match using resume column value from spreadsheet (e.g. filename)
+                    if resume_link_stem and (resume_link_stem == stem or resume_link_stem in stem or stem in resume_link_stem):
+                        matched_resume = path
+                        break
 
-        logging.info(f"[Bulk] Student '{name}' (roll={roll}): resume_matched={'YES' if matched_resume else 'NO'}, path='{matched_resume}', uploaded_pdfs={list(saved_resumes.keys())}")
+            # 5) Fallback to resume link/path from spreadsheet column
+            if not matched_resume and resume_link:
+                matched_resume = resume_link
 
-        # Build the payload
-        student_payload = {
-            "student_id": roll,
-            "name": name,
-            "metadata": {
-                "batch_year": "2026",
-                "branch": "Computer Science"
-            },
-            "agent_targets": {
-                "resume_path": matched_resume,
-                "github_handle": github,
-                "linkedin_url": linkedin,
-                "cp_platforms": {
-                    "leetcode": leetcode,
-                    "codeforces": codeforces,
-                    "codechef": codechef, 
-                    "hackerrank": hackerrank
+            logging.info(f"[Bulk] Student '{name}' (roll={roll}): resume_matched={'YES' if matched_resume else 'NO'}, path='{matched_resume}', uploaded_pdfs={list(saved_resumes.keys())}")
+
+            # Build the payload
+            student_payload = {
+                "student_id": roll,
+                "name": name,
+                "metadata": {
+                    "batch_year": "2026",
+                    "branch": "Computer Science"
+                },
+                "agent_targets": {
+                    "resume_path": matched_resume,
+                    "github_handle": github,
+                    "linkedin_url": linkedin,
+                    "cp_platforms": {
+                        "leetcode": leetcode,
+                        "codeforces": codeforces,
+                        "codechef": codechef, 
+                        "hackerrank": hackerrank
+                    }
                 }
             }
-        }
 
-        # Check if real API keys are configured
-        openai_key = os.environ.get("OPENAI_API_KEY", "")
-        if not openai_key:
-            env_file = ((ROOT_DIR / "Agent V2" / ".env") if version == "v2" else (ROOT_DIR / "agent" / ".env"))
-            if env_file.exists():
-                with open(env_file, 'r') as ef:
-                    for line in ef:
-                        if line.startswith("OPENAI_API_KEY"):
-                            openai_key = line.split("=")[-1].strip().strip('"').strip("'")
-                            break
-        has_real_key = openai_key and not openai_key.startswith("your_")
-
-        try:
+            # Check if real API keys are configured
+            openai_key = os.environ.get("OPENAI_API_KEY", "")
+            if not openai_key:
+                env_file = ((ROOT_DIR / "Agent V2" / ".env") if version == "v2" else (ROOT_DIR / "agent" / ".env"))
+                if env_file.exists():
+                    with open(env_file, 'r') as ef:
+                        for line in ef:
+                            if line.startswith("OPENAI_API_KEY"):
+                                openai_key = line.split("=")[-1].strip().strip('"').strip("'")
+                                break
+            has_real_key = openai_key and not openai_key.startswith("your_")
             if has_real_key:
                 # 90-second timeout per student to prevent bulk hangs
                 result = await asyncio.wait_for(
