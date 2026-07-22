@@ -309,6 +309,44 @@ ONTOLOGY_PATH = AGENT_DIR / "final" / "config" / "domain_ontology.json"
 # ─────────────────────────────────────────────────────────────────────────────
 # MOCK SCORES & FALLBACKS (DETERMINISTIC)
 # ─────────────────────────────────────────────────────────────────────────────
+def sync_forecasting_with_master_score(result: dict, new_ms: float):
+    if "forecasting" not in result:
+        return
+    
+    # Sync placement probability
+    prob = int(new_ms * 1.1)
+    prob = min(95, max(15, prob))
+    
+    # Sync career readiness
+    if new_ms >= 80:
+        readiness = "Highly Competitive"
+    elif new_ms >= 60:
+        readiness = "Market Ready"
+    elif new_ms >= 40:
+        readiness = "Needs Development"
+    else:
+        readiness = "Not Ready"
+    
+    # Sync salary band
+    min_lpa = max(3.5, round((new_ms / 15), 1))
+    max_lpa = min_lpa + 2.5
+    if min_lpa > 25:
+        label = "Tier 1: Product based"
+    elif min_lpa > 12:
+        label = "Tier 2: Unicorn / FinTech"
+    elif min_lpa > 6:
+        label = "Tier 3: Enterprise Services"
+    else:
+        label = "Tier 4: Mass Recruiters"
+    
+    result["forecasting"]["placement_probability"] = prob
+    result["forecasting"]["career_readiness"] = readiness
+    
+    if "expected_salary_band" in result["forecasting"]:
+        result["forecasting"]["expected_salary_band"]["min_lpa"] = min_lpa
+        result["forecasting"]["expected_salary_band"]["max_lpa"] = max_lpa
+        result["forecasting"]["expected_salary_band"]["label"] = label
+
 def is_valid_profile(url):
     if not url: return False
     s = str(url).strip().lower()
@@ -1527,6 +1565,7 @@ async def evaluate_bulk_api(
             result["scores"]["master_score"] = ms_data["master_score"]
             result["scores"]["confidence_level"] = ms_data["confidence_level"]
             result["scores"]["score_breakdown"] = ms_data["score_breakdown"]
+            sync_forecasting_with_master_score(result, ms_data["master_score"])
 
             # Run Excel historical verification
             hist = run_historical_analysis(
@@ -1572,6 +1611,7 @@ async def evaluate_bulk_api(
                 result["scores"]["master_score"] = ms_data["master_score"]
                 result["scores"]["confidence_level"] = ms_data["confidence_level"]
                 result["scores"]["score_breakdown"] = ms_data["score_breakdown"]
+                sync_forecasting_with_master_score(result, ms_data["master_score"])
                 hist = run_historical_analysis(
                     cpi=cpi, backlogs=backlogs, dsa_marks=dsa,
                     english_marks=eng, internships_count=internships, attendance=attendance
