@@ -1540,49 +1540,53 @@ async def evaluate_bulk_api(
             )
             return result
         except Exception as e:
-            result = get_fallback_mock_result(student_payload, benchmarks_data, ontology_data, str(e))
-            
-            # Apply dynamic custom weights from the frontend
-            custom_weights = {
-                "W_resume": w_resume, "W_github": w_github, "W_cp": w_cp,
-                "W_cpi": w_cpi, "W_attendance": w_attendance, "W_backlogs": w_backlogs, "W_internships": w_internships
-            }
-            ms_data = compute_master_score(
-                resume_score=result.get("scores", {}).get("resume_score", 0),
-                github_score=result.get("scores", {}).get("github_score", 0),
-                cp_score=result.get("scores", {}).get("cp_score", 0),
-                cpi=cpi, attendance=attendance, backlogs=backlogs, internships_count=internships,
-                dsa_marks=dsa, english_marks=eng, custom_weights=custom_weights
-            )
-            if "scores" not in result:
-                result["scores"] = {}
-            result["scores"]["master_score"] = ms_data["master_score"]
-            result["scores"]["confidence_level"] = ms_data["confidence_level"]
-            result["scores"]["score_breakdown"] = ms_data["score_breakdown"]
-            
-            hist = run_historical_analysis(
-                cpi=cpi,
-                backlogs=backlogs,
-                dsa_marks=dsa,
-                english_marks=eng,
-                internships_count=internships,
-                attendance=attendance
-            )
-            result["historical_analysis"] = hist
-            result["inputs"] = {
-                "cpi": cpi,
-                "backlogs": backlogs,
-                "dsa_marks": dsa,
-                "english_marks": eng,
-                "internships_count": internships,
-                "attendance": attendance,
-                "github_url": github,
-                "leetcode_url": leetcode
-            }
-            result["xai_attribution"] = generate_xai_attribution_backend(
-                result["inputs"], result.get("scores", {}), result.get("forecasting", {}), version
-            )
-            return result
+            logging.error(f"[Bulk] evaluate_single failed for {roll}: {e}")
+            try:
+                result = get_fallback_mock_result(student_payload, benchmarks_data, ontology_data, str(e))
+                custom_weights = {
+                    "W_resume": w_resume, "W_github": w_github, "W_cp": w_cp,
+                    "W_cpi": w_cpi, "W_attendance": w_attendance, "W_backlogs": w_backlogs, "W_internships": w_internships
+                }
+                ms_data = compute_master_score(
+                    resume_score=result.get("scores", {}).get("resume_score", 0),
+                    github_score=result.get("scores", {}).get("github_score", 0),
+                    cp_score=result.get("scores", {}).get("cp_score", 0),
+                    cpi=cpi, attendance=attendance, backlogs=backlogs, internships_count=internships,
+                    dsa_marks=dsa, english_marks=eng, custom_weights=custom_weights
+                )
+                if "scores" not in result:
+                    result["scores"] = {}
+                result["scores"]["master_score"] = ms_data["master_score"]
+                result["scores"]["confidence_level"] = ms_data["confidence_level"]
+                result["scores"]["score_breakdown"] = ms_data["score_breakdown"]
+                hist = run_historical_analysis(
+                    cpi=cpi, backlogs=backlogs, dsa_marks=dsa,
+                    english_marks=eng, internships_count=internships, attendance=attendance
+                )
+                result["historical_analysis"] = hist
+                result["inputs"] = {
+                    "cpi": cpi, "backlogs": backlogs, "dsa_marks": dsa,
+                    "english_marks": eng, "internships_count": internships,
+                    "attendance": attendance, "github_url": github, "leetcode_url": leetcode
+                }
+                try:
+                    result["xai_attribution"] = generate_xai_attribution_backend(
+                        result["inputs"], result.get("scores", {}), result.get("forecasting", {}), version
+                    )
+                except Exception:
+                    result["xai_attribution"] = {}
+                return result
+            except Exception as e2:
+                logging.error(f"[Bulk] Fallback also failed for {roll}: {e2}")
+                return {
+                    "student_id": roll,
+                    "name": name,
+                    "error": str(e),
+                    "scores": {"master_score": 0.0, "confidence_level": "Low"},
+                    "forecasting": {"placement_probability": 0.0},
+                    "historical_analysis": {"status": "error"},
+                    "inputs": {"cpi": cpi, "backlogs": backlogs},
+                }
 
     try:
         # Execute in parallel with a strict concurrency limit of 3 to prevent API rate-limits and timeouts!
@@ -1591,7 +1595,14 @@ async def evaluate_bulk_api(
             async with sem:
                 return await evaluate_single(r)
         
-        results = await asyncio.gather(*(evaluate_with_sem(r) for r in records))
+        results_raw = await asyncio.gather(*(evaluate_with_sem(r) for r in records), return_exceptions=True)
+        results = []
+        for i, res in enumerate(results_raw):
+            if isinstance(res, Exception):
+                logging.error(f"[Bulk] Student {i} gather exception: {res}")
+                results.append({"error": str(res), "scores": {"master_score": 0.0}, "name": f"Student {i+1}"})
+            else:
+                results.append(res)
         return results
     finally:
         # Clean up temp spreadsheet file
