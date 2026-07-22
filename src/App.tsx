@@ -17,7 +17,8 @@ const LOADING_STEPS = [
   "Forecasting Placement Probability & Salary Bands..."
 ];
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
+// API calls go through Vercel's proxy rewrite → Render backend (no CORS issues)
+const API_BASE = import.meta.env.VITE_API_BASE_URL ?? '';
 
 const App: React.FC = () => {
   const [submitting, setSubmitting] = useState<boolean>(false);
