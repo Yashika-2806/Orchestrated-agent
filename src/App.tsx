@@ -125,7 +125,7 @@ const App: React.FC = () => {
     });
     
     try {
-      const response = await fetch('/api/evaluate-bulk', {
+      const response = await fetch(`${API_BASE}/api/evaluate-bulk`, {
         method: 'POST',
         body: formData
       });
@@ -153,7 +153,7 @@ const App: React.FC = () => {
       const formData = new FormData();
       formData.append('file', file);
       try {
-        const response = await fetch('/api/upload-template', {
+        const response = await fetch(`${API_BASE}/api/upload-template`, {
           method: 'POST',
           body: formData
         });
@@ -346,7 +346,7 @@ const App: React.FC = () => {
               {/* Download / Upload CSV Template Buttons */}
               <div style={{ display: 'flex', gap: 8, marginBottom: 16 }}>
                 <a 
-                  href={`/api/download-template?version=${activePortal}`} 
+                  href={`${API_BASE}/api/download-template?version=${activePortal}`} 
                   download
                   className="theme-toggle-btn"
                   style={{ flex: 1, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 6, justifyContent: 'center', fontSize: '0.75rem', padding: '8px 12px', background: 'rgba(99, 102, 241, 0.05)', border: '1px solid var(--border-color)', borderRadius: 8, color: 'var(--text-main)', cursor: 'pointer' }}
