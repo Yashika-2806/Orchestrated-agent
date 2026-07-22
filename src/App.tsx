@@ -17,6 +17,8 @@ const LOADING_STEPS = [
   "Forecasting Placement Probability & Salary Bands..."
 ];
 
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
+
 const App: React.FC = () => {
   const [submitting, setSubmitting] = useState<boolean>(false);
   const [currentStepIndex, setCurrentStepIndex] = useState<number>(0);
@@ -83,7 +85,7 @@ const App: React.FC = () => {
       Object.entries(weights).forEach(([key, val]) => {
         formData.append(key, val.toString());
       });
-      const response = await fetch('/api/evaluate', {
+      const response = await fetch(`${API_BASE}/api/evaluate`, {
         method: 'POST',
         body: formData,
       });

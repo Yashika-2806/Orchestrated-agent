@@ -22,6 +22,8 @@ interface StudentSelectorProps {
   version?: 'v1' | 'v2';
 }
 
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
+
 export const StudentSelector: React.FC<StudentSelectorProps> = ({ onSelectStudent, selectedRoll, version = 'v1' }) => {
   const [batches, setBatches] = useState<Batch[]>([]);
   const [selectedBatch, setSelectedBatch] = useState<string>('');
@@ -47,7 +49,7 @@ export const StudentSelector: React.FC<StudentSelectorProps> = ({ onSelectStuden
     setLoadingBatches(true);
     setError(null);
     try {
-      const res = await fetch(`/api/batches?version=${version}`);
+      const res = await fetch(`${API_BASE}/api/batches?version=${version}`);
       if (!res.ok) throw new Error('Failed to load batches');
       const data = await res.json();
       setBatches(data);
@@ -67,7 +69,7 @@ export const StudentSelector: React.FC<StudentSelectorProps> = ({ onSelectStuden
     setLoadingStudents(true);
     setStudents([]);
     try {
-      const res = await fetch(`/api/students/${batchId}?version=${version}`);
+      const res = await fetch(`${API_BASE}/api/students/${batchId}?version=${version}`);
       if (!res.ok) throw new Error('Failed to load students');
       const data = await res.json();
       setStudents(data);
