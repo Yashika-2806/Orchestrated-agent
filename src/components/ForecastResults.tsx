@@ -1228,22 +1228,22 @@ export const ForecastResults: React.FC<ForecastResultsProps> = ({ data }) => {
                 ({(scores.cp_score || 0).toFixed(2)} [CP] × {(scores.weightages?.W_cp ?? 3).toFixed(1)}) +
               </div>
               <div style={{ paddingLeft: 20 }}>
-                ({(scores.normalized_academics?.cpi || 0).toFixed(2)} [CPI] × {(scores.weightages?.W_cpi ?? 20).toFixed(1)}) +
+                ({(scores.score_breakdown?.cpi?.normalized || 0).toFixed(2)} [CPI] × {(scores.weightages?.W_cpi ?? 20).toFixed(1)}) +
               </div>
               <div style={{ paddingLeft: 20 }}>
-                ({(scores.normalized_academics?.dsa_marks || 0).toFixed(2)} [DSA] × {(scores.weightages?.W_dsa ?? 18).toFixed(1)}) +
+                ({(scores.score_breakdown?.dsa_marks?.normalized || 0).toFixed(2)} [DSA] × {(scores.weightages?.W_dsa ?? 18).toFixed(1)}) +
               </div>
               <div style={{ paddingLeft: 20 }}>
-                ({(scores.normalized_academics?.english_marks || 0).toFixed(2)} [English] × {(scores.weightages?.W_english ?? 17).toFixed(1)}) +
+                ({(scores.score_breakdown?.english_marks?.normalized || 0).toFixed(2)} [English] × {(scores.weightages?.W_english ?? 17).toFixed(1)}) +
               </div>
               <div style={{ paddingLeft: 20 }}>
-                ({(scores.normalized_academics?.internships || 0).toFixed(2)} [Internships] × {(scores.weightages?.W_internships ?? 15).toFixed(1)}) +
+                ({(scores.score_breakdown?.internships?.normalized || 0).toFixed(2)} [Internships] × {(scores.weightages?.W_internships ?? 15).toFixed(1)}) +
               </div>
               <div style={{ paddingLeft: 20 }}>
-                ({(scores.normalized_academics?.backlogs || 0).toFixed(2)} [Backlogs] × {(scores.weightages?.W_backlogs ?? 3).toFixed(1)}) +
+                ({(scores.score_breakdown?.backlogs?.normalized || 0).toFixed(2)} [Backlogs] × {(scores.weightages?.W_backlogs ?? 3).toFixed(1)}) +
               </div>
               <div style={{ paddingLeft: 20 }}>
-                ({(scores.normalized_academics?.attendance || 0).toFixed(2)} [Attendance] × {(scores.weightages?.W_attendance ?? 0).toFixed(1)})
+                ({(scores.score_breakdown?.attendance?.normalized || 0).toFixed(2)} [Attendance] × {(scores.weightages?.W_attendance ?? 0).toFixed(1)})
               </div>
               <br/>
               <div style={{ color: 'var(--text-dim)' }}>
