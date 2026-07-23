@@ -17,3 +17,5 @@ scipy>=1.9.0
 gdown
 groq
 anthropic
+cloudscraper
+beautifulsoup4
